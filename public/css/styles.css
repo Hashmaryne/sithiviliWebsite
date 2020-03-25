@@ -1,0 +1,421 @@
+body{
+    padding: 0;
+}
+.header
+{
+    background-image: url("../images/banner.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+    height: 500px;
+    width:auto;
+}
+
+
+.header-about
+{
+    background-image: url("../images/about-banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 500px;
+    width:auto;
+}
+
+
+.header-join
+{
+    background-image: url("../images/join-us.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 500px;
+    width:auto;
+}
+
+.header-download
+{
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 680px;
+    width:auto;
+}
+
+
+.heading-main
+{
+    float: center;
+    margin-top:100px;
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: sans-serif;
+}
+
+
+.heading-main-sec
+{
+    float: center;
+    margin-top:100px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: sans-serif;
+}
+
+.heading-sub
+{
+    float: center;
+    margin-top:100px;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: monospace;
+}
+
+.letstalk-btn
+{
+    
+    margin-top:100px;
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    border: solid;
+    border-color: #0000005e;
+    border-width: 5px;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+.letstalk-btn:hover
+{
+    background-color: #0000005e;
+}
+
+#active
+{
+    border-bottom: solid;
+    border-color: white;
+    border-width: 5px;
+}
+
+
+
+.content-home
+{
+   padding-top: 20px;
+   
+}
+
+.heading-sec
+{
+    padding-top: 20px;
+    color: rgb(0, 89, 255);
+    text-align:center ;
+    font-family: sans-serif;
+    font-size: 42px;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: bold;
+}
+
+.img-sec
+{
+    margin:50px 200px 50px 200px;
+    border: solid;
+    
+}
+
+.about-img
+{
+    width: 400px;
+    height: 200px;
+    top: 55%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    display: block;
+    position: absolute;
+}
+
+.tagline
+{
+    margin-top: 50px;
+    color:  rgb(0, 89, 255);
+    font-size: 30px;
+}
+
+.sec-btn
+{
+    
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    border: solid;
+    border-color:lightskyblue;
+    border-width: 2px;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+    width: 120px;
+}
+
+.sec-btn:hover
+{
+    background-color:rgba(135, 206, 250, 0.788);
+    color:white;
+    font-weight: bold;
+}
+
+#section
+{
+    margin-bottom: 20px;
+}
+
+
+
+.volunteer-img
+{
+    width: 300px;
+    height: 250px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    position: absolute;
+}
+
+.contact-img
+{
+    width: 400px;
+    height: 200px;
+    top: 55%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    display: block;
+    position: absolute;
+}
+
+.footer
+{
+    background-color: #2D7584;
+    color:white;
+    bottom: 0;
+    position: relative;
+}
+
+.social
+{
+    position: relative;
+}
+
+.social_icons
+{
+    position: absolute;
+    right:0;
+
+}
+
+
+
+#poster
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.logo {
+    line-height: 60px;
+    position: fixed;
+    float: left;
+    margin: 16px 46px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+
+.navbar-toggler-icon
+{
+    color:white;
+}
+
+.navbar navbar-expand-lg fixed-top
+{
+    position: absolute;
+    color: white;
+}
+
+
+.nav-link 
+{
+    color: white!important;
+    font-size: 18px;  
+}
+
+.navbar-brand
+{
+    color: white!important;
+}
+
+
+.nav-item:hover
+{
+    border-bottom: solid;
+    border-color:white;
+    border-width: 5px;
+}
+
+.nav-item
+{
+    margin-left: 5px;
+}
+
+.background-nav
+{   
+    background: #2D7584;
+
+}
+
+#mobile_only
+{
+    display:none;
+}
+
+.container
+{
+    position: relative;
+}
+
+.home_screen
+{
+    position: absolute;
+    height: 500px;
+    left: 20%;
+    top: 15%;
+}
+
+#img-section
+{
+    position: relative;
+}
+
+.download_txt
+{ 
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    font-family: sans-serif;
+    color: white;
+}
+
+.download_txt_sub
+{ 
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    color: white;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.playstore_btn
+{ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.feature_txt
+{
+    position: absolute;
+    margin-top: 50px;
+    color:  rgb(0, 89, 255);
+    font-size: 28px;
+    top: 30%;
+    left: 20%;
+}
+
+
+.feature-des
+{
+    position: absolute;
+    left: 20%;
+    top: 50%;
+
+}
+
+div#logo-row {
+    position: relative;
+    height: 200px;
+}
+
+h1.logo-ty {
+    position: absolute;
+    left: 35%;
+    top: 36%;
+}
+
+div#content-row {
+    position: relative;
+}
+
+i.fas.fa-check-circle {
+    /* width: 217px; */
+    position: relative;
+    left: 38%;
+    height: 150px;
+    font-size: 72px;
+    color: #007bff;
+}
+
+p.ty-text {
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+    color: #00d0ff;
+}
+
+p.more-ty {
+    text-align: center;
+    font-size: 18px;
+}
+
+p.footer-icons {
+    font-size: 22px;
+    position: relative;
+    height: 50px;
+}
+
+i.fab.fa-facebook-f {
+    position: absolute;
+    left: 40%;
+    top: 20%;
+}
+
+i.fab.fa-instagram {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+}
+
+hr.footer-line {
+    border: 1px solid black;
+    width: 68%;
+}
