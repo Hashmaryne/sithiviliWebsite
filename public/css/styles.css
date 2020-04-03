@@ -250,6 +250,10 @@ body{
     letter-spacing: 2px;
 }
 
+.logo-img
+{
+    height:55px;
+}
 
 .navbar-toggler-icon
 {
@@ -366,9 +370,10 @@ div#logo-row {
     height: 200px;
 }
 
-h1.logo-ty {
+.logo-app {
     position: absolute;
-    left: 35%;
+    left: 47%;
+    height: 100px;
     top: 36%;
 }
 
@@ -379,7 +384,7 @@ div#content-row {
 i.fas.fa-check-circle {
     /* width: 217px; */
     position: relative;
-    left: 38%;
+    left: 48%;
     height: 150px;
     font-size: 72px;
     color: #007bff;
@@ -405,9 +410,10 @@ p.footer-icons {
 
 i.fab.fa-facebook-f {
     position: absolute;
-    left: 40%;
+    left: 47%;
     top: 20%;
 }
+
 
 i.fab.fa-instagram {
     position: absolute;
@@ -419,3 +425,4 @@ hr.footer-line {
     border: 1px solid black;
     width: 68%;
 }
+

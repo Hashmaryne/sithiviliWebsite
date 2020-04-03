@@ -38,3 +38,13 @@ Route::get('thank-you', function()
 });
 
 
+
+Route::get('/reset-password/{user}','ResetPasswordsController@displayPage');
+
+Route::post('/submit', 'ResetPasswordsController@postResetPass');
+//Route::resource('/reset','ResetController');
+
+/* Route::get('/reset-password/{user}', function($user)
+{
+    return 'This is ' .$user;
+}); */

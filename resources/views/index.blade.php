@@ -23,7 +23,7 @@
         <div class="navigation">
             <nav class="navbar navbar-expand-lg fixed-top">
                 <div class="container"> 
-                    <a class="navbar-brand" href="#"> Logo
+                    <a class="navbar-brand" href="#"> <p><img src="{{URL::asset('/images/sithivili_logo1.png')}}" class="logo-img">  Sithivili</p>
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>

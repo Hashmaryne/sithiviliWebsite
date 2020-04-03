@@ -123,4 +123,59 @@
       .navigation{
             text-align: center;;
       }
+
+      .logo-app {
+            position: absolute;
+            left: 34%;
+            height: 100px;
+            top: 36%;
+        }
+
+        div#content-row {
+            position: relative;
+        }
+        
+        i.fas.fa-check-circle {
+            /* width: 217px; */
+            position: relative;
+            left: 38%;
+            height: 150px;
+            font-size: 72px;
+            color: #007bff;
+        }
+        
+        p.ty-text {
+            font-size: 32px;
+            text-align: center;
+            font-weight: bold;
+            color: #00d0ff;
+        }
+        
+        p.more-ty {
+            text-align: center;
+            font-size: 18px;
+        }
+        
+        p.footer-icons {
+            font-size: 22px;
+            position: relative;
+            height: 50px;
+        }
+        
+        i.fab.fa-facebook-f {
+            position: absolute;
+            left: 40%;
+            top: 20%;
+        }
+        
+        i.fab.fa-instagram {
+            position: absolute;
+            left: 50%;
+            top: 20%;
+        }
+        
+        hr.footer-line {
+            border: 1px solid black;
+            width: 68%;
+        }
 } 

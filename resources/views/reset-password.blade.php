@@ -22,22 +22,39 @@
         <img src="{{URL::asset('/images/sithivili_logo1.png')}}" class="logo-app">
         </div>
 
-        <div class="row" id="content-row">
-            <div class="col"> 
-                <i class="fas fa-check-circle"></i>
-                <p class="ty-text"> Thank you for registering with Sithivili! </p>
-                <p class ="more-ty"> Your email has been varified. Please login via the app. Want to know more about Sithivili? <a href="/"> Click here </a> to vist our website </p>
-            </div>
-        </div>
+        
+        <form class="text-center border border-light p-5" action="{{URL::to('/submit')}}" method="post" id="resetForm">
 
-        <div class="row" id="footer-row">
-            <div class="col">
-                <p class="footer-icons"><i class="fab fa-facebook-f"></i>  <i class="fab fa-instagram"></i></p>
-                <hr class="footer-line">
-            </div>
-        </div>
+            <p class="h4 mb-4">Reset Password</p>
+
+            <!-- usename -->
+            <input type="hidden" class="form-control mb-4" id="username" placeholder="Enter new user" name="username" value="{{ collect(request()->segments())->last() }}" onchange='PassCheck();'>
+            <!-- Paaword -->
+            <input type="password" class="form-control mb-4" id="password" placeholder="Enter new password" name="password" onkeyup='PassCheck();' required>
+
+            <!-- Confirm Password -->
+            <input type="password" class="form-control mb-4" id="confirm-pass" placeholder="Confirm password" name="password-confirm"  onkeyup='PassCheck();' required>
+            <p style="display:none; color:red" id="msg"> Passwords do not match </p>
+            <!-- reset button -->
+            <button class="btn btn-info btn-block my-4" type="submit" id='submit'>Reset password</button>
+
+        </form>
+           
 
     </div>
-   
+<script  type="text/javascript">
+  function PassCheck() {
+  var password = document.getElementById('password');
+  var vpassword = document.getElementById('confirm-pass');
+
+  if (password.value != vpassword.value) {
+    document.getElementById("submit").setAttribute("disabled","disabled");
+    document.getElementById("msg").style.display = "block"; 
+  }
+  else {
+    document.getElementById("submit").removeAttribute("disabled");
+    document.getElementById("msg").style.display = "none"; 
+  }
+}
+</script>
 </body>
-</html>
