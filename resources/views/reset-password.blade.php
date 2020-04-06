@@ -23,7 +23,7 @@
         </div>
 
         
-        <form class="text-center border border-light p-5" action="{{URL::to('/submit')}}" method="post" id="resetForm">
+        <form class="text-center border border-light p-5" action="{{ URL::to('/reset') }}" method="post" id="resetForm">
 
             <p class="h4 mb-4">Reset Password</p>
 
@@ -34,7 +34,7 @@
 
             <!-- Confirm Password -->
             <input type="password" class="form-control mb-4" id="confirm-pass" placeholder="Confirm password" name="password-confirm"  onkeyup='PassCheck();' required>
-            <p style="display:none; color:red" id="msg"> Passwords do not match </p>
+            <p style="display:none; color:red" id="msg"> Pswords do not match </p>
             <!-- reset button -->
             <button class="btn btn-info btn-block my-4" type="submit" id='submit'>Reset password</button>
 

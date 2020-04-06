@@ -12,6 +12,6 @@ class VerifyCsrfToken extends Middleware
      * @var array
      */
     protected $except = [
-        'submit'
+        'http://127.0.0.1:8000/reset',
     ];
 }

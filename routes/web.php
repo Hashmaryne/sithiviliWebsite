@@ -41,10 +41,17 @@ Route::get('thank-you', function()
 
 Route::get('/reset-password/{user}','ResetPasswordsController@displayPage');
 
-Route::post('/submit', 'ResetPasswordsController@postResetPass');
-//Route::resource('/reset','ResetController');
+//Route::post('/postreset', 'ResetPasswordsController@postResetPass')->name('resetPass');
+/* Route::post('/reset', [
+    'uses'=>'ResetPasswordsController@postResetPass',
+    'as' => 'test.route'
+    ]
+); */
 
+Route::post('/reset', 'ResetPasswordsController@postResetPass');
+   
 /* Route::get('/reset-password/{user}', function($user)
 {
     return 'This is ' .$user;
 }); */
+// /api/users/user/password/reset
