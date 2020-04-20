@@ -34,7 +34,7 @@
 
             <!-- Confirm Password -->
             <input type="password" class="form-control mb-4" id="confirm-pass" placeholder="Confirm password" name="password-confirm"  onkeyup='PassCheck();' required>
-            <p style="display:none; color:red" id="msg"> Pswords do not match </p>
+            <p style="display:none; color:red" id="msg"> Passwords do not match </p>
             <!-- reset button -->
             <button class="btn btn-info btn-block my-4" type="submit" id='submit'>Reset password</button>
 

@@ -34,6 +34,16 @@ body{
     width:auto;
 }
 
+.header-contact
+{
+    background-image: url("../images/contact-us-banner.jpeg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 500px;
+    width:auto;
+}
+
 .header-download
 {
     background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);

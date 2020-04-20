@@ -21,7 +21,7 @@
     <div class="header">
         <!--Navbar starts-->
         <div class="navigation">
-            <nav class="navbar navbar-expand-lg fixed-top">
+            <nav class="navbar navbar-expand-lg fixed-top navbar-light">
                 <div class="container"> 
                     <a class="navbar-brand" href="#"> <p><img src="{{URL::asset('/images/sithivili_logo1.png')}}" class="logo-img">  Sithivili</p>
                     </a>

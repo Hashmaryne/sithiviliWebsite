@@ -37,21 +37,14 @@ Route::get('thank-you', function()
     return view('thank-you');
 });
 
+Route::get('contact-us', function()
+{
+    return view('contact-us');
+});
 
 
 Route::get('/reset-password/{user}','ResetPasswordsController@displayPage');
 
-//Route::post('/postreset', 'ResetPasswordsController@postResetPass')->name('resetPass');
-/* Route::post('/reset', [
-    'uses'=>'ResetPasswordsController@postResetPass',
-    'as' => 'test.route'
-    ]
-); */
-
 Route::post('/reset', 'ResetPasswordsController@postResetPass');
    
-/* Route::get('/reset-password/{user}', function($user)
-{
-    return 'This is ' .$user;
-}); */
-// /api/users/user/password/reset
+

@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">    
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Catamaran:900&display=swap" rel="stylesheet"> 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -18,7 +19,7 @@
 </head>
 <body>
     <!--Head starts-->
-    <div class="header-join">
+    <div class="header-contact">
         <!--<img src="images\banner.jpeg" class="banner-home">-->
         <!--Navbar starts-->
         <div class="navigation">
@@ -45,13 +46,15 @@
                             <a class="nav-link" href="about-us">About Us</a>
                                
                         </li>
-                        <li class="nav-item" id="active">
+                        <li class="nav-item" >
                             <a class="nav-link" href="join-us">Join Us
-                            <span class="sr-only">(current)</span>
+                            
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact-us">Contact Us</a>
+                        <li class="nav-item" id="active">
+                            <a class="nav-link" href="contact-us">Contact Us
+                            <span class="sr-only">(current)</span>
+                            </a>
                         </li>
                     </ul>
                     </div>
@@ -59,32 +62,33 @@
             </nav>
         </div>
         <!--Navbar ends-->
-        <h1 class="heading-main-sec">Join Us</h1>
+        <h1 class="heading-main-sec">Contact Us</h1>
         
     </div>
     <!--Head ends-->
 
     <!--content starts-->
     <div class="container">
-        <!--about us heading  starts-->
+        <!--contact us heading  starts-->
         <div class="row">
-            <div class="col-md-12"><h2 class="heading-sec">Volunteer Opportunities</h4></div>
+            <div class="col-md-12"><h2 class="heading-sec">Have any questions? Reach out to us!</h4></div>
         </div>
-        <!--about us heading  ends--> 
-
+        <!--contact us heading  ends--> 
         <div class="row">
-            <div class="col-md-12">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
+            <div clas="col-md-6"><i class="fas fa-phone-volume"></i></div>
+            <div class="col-md-6"> <p><b>CALL US UP ON</b><br>Rusiru: +94 75 729 1350 <br>Hiruksha: +94 77 802 7599 <br>Hashmaryne: +94 77 006 5700</p></div>
         </div>
 
-        <div class="row justify-content-center">
-            <div class="col-md-12" style="align-items: center;">
-                <img src="{{URL::asset('/images/poster.jpeg')}}" class="mx-auto d-block" id="poster">
-            </div>
-        <div>
-        
+        <div class="row">
+            <div clas="col-md-6"><i class="fas fa-at"></i></div>
+            <div class="col-md-6"> <p><b>SEND US AN EMAIL</b><br>sithivili.project@gmail.com</p></div>
+        </div>
+
+       <div class="row">
+            <p><b>OR DROP US A MESSAGE THROUGH OUR SOCIALS </b><br> <i class="fab fa-facebook-square"></i>  <i class="fab fa-instagram-square"></i> </p>
+       </div>
+
+       
     </div>
     <!--content ends-->
        
