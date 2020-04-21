@@ -55,7 +55,7 @@
         </div>
 
         <!--Navbar ends-->
-        <h1 class="heading-main">Your  is not over yet;</h1>
+        <h1 class="heading-main">Your Story is not over yet;</h1>
         <h4 class="heading-sub"> Never be afraid to reach out for help </h4>
         <div class="letstalk-btn">Lets talk!</div> 
     </div>
