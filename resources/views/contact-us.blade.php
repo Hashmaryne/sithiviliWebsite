@@ -74,14 +74,14 @@
             <div class="col-md-12"><h2 class="heading-sec">Have any questions? Reach out to us!</h4></div>
         </div>
         <!--contact us heading  ends--> 
-        <div class="row">
-            <div clas="col-md-6"><i class="fas fa-phone-volume"></i></div>
-            <div class="col-md-6"> <p><b>CALL US UP ON</b><br>Rusiru: +94 75 729 1350 <br>Hiruksha: +94 77 802 7599 <br>Hashmaryne: +94 77 006 5700</p></div>
+        <div class="row" id="call-us-row">
+            <div clas="col-md-6" id="call-us-left"><i class="fas fa-phone-volume"></i></div>
+            <div class="col-md-6" id="call-us-right"> <p><b>CALL US UP ON</b><br>Rusiru: +94 75 729 1350 <br>Hiruksha: +94 77 802 7599 <br>Hashmaryne: +94 77 006 5700</p></div>
         </div>
 
-        <div class="row">
-            <div clas="col-md-6"><i class="fas fa-at"></i></div>
-            <div class="col-md-6"> <p><b>SEND US AN EMAIL</b><br>sithivili.project@gmail.com</p></div>
+        <div class="row" id="email-us-row">
+            <div clas="col-md-6" id="email-us-left"><i class="fas fa-at"></i></div>
+            <div class="col-md-6" id="email-us-right"> <p><b>SEND US AN EMAIL</b><br>sithivili.project@gmail.com</p></div>
         </div>
 
        <div class="row">
