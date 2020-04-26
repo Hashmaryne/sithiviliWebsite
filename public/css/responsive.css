@@ -143,6 +143,15 @@
             font-size: 72px;
             color: #007bff;
         }
+
+        .fa-frown {
+            /* width: 217px; */
+            position: relative;
+            left: 38%;
+            height: 150px;
+            font-size: 72px;
+            color: #007bff;
+        }
         
         p.ty-text {
             font-size: 32px;
