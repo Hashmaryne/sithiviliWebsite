@@ -23,19 +23,6 @@ class ResetPasswordsController extends Controller
      
         $password=$request->input('password');
         $username=$request->input('username');
-     /*    Log::emergency($password);
-        Log::emergency($username); */
-        //$client = new \GuzzleHttp\Client();
-
-        // $response = $client->post('http://127.0.0.1:8000', [
-        //     'form_params' => [
-        //         'username' => $username,
-        //         'password' => $password,
-        //         'action' => 'submit'
-        //     ],
-            
-        // ]
-        //);  
         
         $client = new \GuzzleHttp\Client(["base_uri" => "https://sithivili.azurewebsites.net" ]);
             $fields = [
@@ -47,28 +34,17 @@ class ResetPasswordsController extends Controller
                 'headers'=> ['Accept' => 'application/json']
                ];
         $response = $client->post("/api/users/user/password/reset", $fields);
-        echo $response->getBody();
+        //echo $response->getBody();
 
-        /* $client = new \GuzzleHttp\Client();
-        $response = $client->request('POST', 'http://sithivili.azurewebsites.net/api/users/user/password/reset', [
-            'json' => [
-                "username" => "$username",
-                "password" => "$password"
-            ]
-        ]); */
-    
+        if ($response->getBody()=="true")
+        {
+            return view('password-success');
+        }
+        else
+        {
+            return view('error-message');
+        }
 
 
-/*         $client = new \GuzzleHttp\Client();
-        $url = "http://127.0.0.1:8000";
-        $response = $client->post($url, [
-            'form_params' => [
-                'username' => $request->get('username'),
-                'password' => $request->get('password'),
-
-            ]
-        ]); */
-        // print_r($password);
-        // print_r($username);
     }
 }

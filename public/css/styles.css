@@ -406,6 +406,15 @@ p.ty-text {
     font-weight: bold;
     color: #00d0ff;
 }
+.fa-frown{
+    /* width: 217px; */
+    position: relative;
+    left: 48%;
+    height: 150px;
+    font-size: 72px;
+    color: #007bff;
+}
+
 
 p.more-ty {
     text-align: center;

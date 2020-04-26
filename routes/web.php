@@ -42,6 +42,10 @@ Route::get('contact-us', function()
     return view('contact-us');
 });
 
+Route::get('error-message', function()
+{
+    return view('error-message');
+});
 
 Route::get('/reset-password/{user}','ResetPasswordsController@displayPage');
 
