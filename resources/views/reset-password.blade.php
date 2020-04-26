@@ -24,7 +24,7 @@
 
         
         <form class="text-center border border-light p-5" action="{{ URL::to('/reset') }}" method="post" id="resetForm">
-
+            @csrf
             <p class="h4 mb-4">Reset Password</p>
 
             <!-- usename -->
