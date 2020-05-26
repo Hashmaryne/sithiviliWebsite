@@ -22,10 +22,10 @@ Route::get('about-us', function()
     return view('about-us');
 });
 
-Route::get('join-us', function()
-{
-    return view('join-us');
-});
+// Route::get('join-us', function()
+// {
+//     return view('join-us');
+// });
 
 Route::get('download', function()
 {
@@ -50,5 +50,8 @@ Route::get('error-message', function()
 Route::get('/reset-password/{user}','ResetPasswordsController@displayPage');
 
 Route::post('/reset', 'ResetPasswordsController@postResetPass');
+
+Route::get('join-us', 'JoinFormController@create')->name('join.create');
+Route::post('join-us', 'JoinFormController@store')->name('join.store');
    
 

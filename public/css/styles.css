@@ -445,3 +445,23 @@ hr.footer-line {
     width: 68%;
 }
 
+#myModal{
+    -webkit-box-shadow: -2px 16px 24px 0px rgba(45,117,132,1);
+    -moz-box-shadow: -2px 16px 24px 0px rgba(45,117,132,1);
+    box-shadow: -2px 16px 24px 0px rgba(45,117,132,1);
+    padding-bottom: 200px;
+}
+
+
+.modal-title{
+    color:#428bca;
+    font-weight: bold;
+}
+
+label{
+    color:#5bc0de;
+}
+
+.btn-info{
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+}
