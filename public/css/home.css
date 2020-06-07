@@ -1,0 +1,32 @@
+.banner-section{
+    background: #C6E2FF;
+    height: 550px;
+    margin-top: 80px;text-align: center !important;
+}
+
+.banner-section h3{
+    color: #334252;
+    font-size: 40px;
+    margin: 0 auto;
+    font-weight: 600;
+    font-family: 'Hind', sans-serif;
+}
+
+.banner-section span{
+    color:#007FFF;
+}
+
+.banner-section button{
+    font-weight: 600;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all .2s ease-in-out;
+    border: 2px solid #007FFF;
+    padding: 0 32px;
+    height: 53px;
+    font-size: 18px;
+    line-height: 53px;
+    border-radius: 10px;
+    color: #fff;
+    background: #007FFF;
+}
+

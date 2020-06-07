@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{ secure_asset('css/styles.css') }}">
-    <link rel="stylesheet" href="{{ secure_asset('css/responsive.css') }}">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
@@ -18,13 +19,13 @@
 </head>
 <body>
     <!--Head starts-->
-    <div class="header-download">
+    <div class="page-head">
         <!--<img src="images\banner.jpeg" class="banner-home">-->
         <!--Navbar starts-->
         <div class="navigation">
-            <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+            <nav class=" navbar navbar-expand-lg fixed-top navbar-light">
                 <div class="container"> 
-                    <a class="navbar-brand" href="#"> <p><img src="{{URL::asset('/images/sithivili_logo1.png')}}" class="logo-img">  Sithivili</p>
+                    <a class="navbar-brand" href="#"> <div class="header-name header-name-color"><img src="{{URL::asset('/images/sithivili_logo1.png')}}" class="logo-img"><span style="padding-left:20px;">Sithivili<span></div>
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -59,10 +60,15 @@
         <!--Navbar ends-->
 
         <!--download app starts-->
-        <img src="{{URL::asset('/images/home-screen.png')}}" class="home_screen">
-        <h1 class="download_txt"> Download Sithivili </h1>
-        <p class="download_txt_sub"> Your one stop shop to mental wellbeing </p>
-        <img src="{{URL::asset('/images/googleplay.png')}}" class="playstore_btn">
+        <section class="banner-section">
+
+            <div style="margin-top:50px; padding:100px;">
+                <h3 style="">Don't Lose<span> Hope</span>, <br><span>Believe</span> in yourself and all that you are.</h3>
+                <button style="">
+                    Download Sithivili
+                </button>
+            </div>
+        </section>
         <!--download app ends-->
         
     </div>
@@ -70,6 +76,14 @@
 
     <!--content starts-->
     <div class="container">
+    
+    <!-- <section>
+    <img src="{{URL::asset('/images/home-screen.png')}}" class="home_screen">
+        <h1 class="download_txt"> Download Sithivili </h1>
+        <p class="download_txt_sub"> Your one stop shop to mental wellbeing </p>
+        <img src="{{URL::asset('/images/googleplay.png')}}" class="playstore_btn">
+    </section> -->
+        
 
         <div class="row" id="section">
             <div class="col-md-6" style="position:relative">
@@ -123,9 +137,14 @@
 $(function () {
     $(window).on('scroll', function () {
         if ( $(window).scrollTop() > 10 ) {
-            $('.navbar').addClass('background-nav');
+            $('.navbar').addClass('nav-fixed');
+            $('.nav-link').addClass('nav-link-transform');
+            $('.header-name').removeClass('header-name-color');
         } else {
-            $('.navbar').removeClass('background-nav');
+            $('.navbar').removeClass('nav-fixed');
+            $('.nav-link').removeClass('nav-link-transform');
+            $('.header-name').addClass('header-name-color');
+
         }
     });
 });
