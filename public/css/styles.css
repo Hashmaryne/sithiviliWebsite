@@ -54,6 +54,14 @@ body{
     width:auto;
 }
 
+.page-head{
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 680px;
+    width:auto;
+}
+
 
 .heading-main
 {
@@ -121,11 +129,37 @@ body{
 
 #active
 {
+    color: rgb(0, 106, 206) !important;
     border-bottom: solid;
-    border-color: white;
+    border-color: rgb(30, 153, 253);
     border-width: 5px;
 }
 
+.header-name{
+    font-family: Comic Sans, Comic Sans MS, cursive;
+    font-weight: bolder;
+}
+
+.header-name-color{
+    color: #007FFF;
+}
+
+nav {
+    transition: all 0.8s ease 0s;
+    background: #C6E2FF;
+    padding: 25px 15px;
+}
+
+.nav-fixed {
+    padding: 10px 0px;
+    background-color: #2979ff;
+    border-bottom: 1px;
+    box-shadow: 0px 2px 5px rgba(100, 100, 100, 0.3);
+}
+
+.nav-padding {
+    padding: 25px 15px;
+}
 
 
 .content-home
@@ -279,8 +313,10 @@ body{
 
 .nav-link 
 {
-    color: white!important;
-    font-size: 18px;  
+    font-weight: 500;
+    text-transform: capitalize;
+    color: black !important;
+    padding: 10px 0; 
 }
 
 .navbar-brand
@@ -288,12 +324,27 @@ body{
     color: white!important;
 }
 
+.nav-link-transform{
+    color: white !important;
+}
+
 
 .nav-item:hover
 {
+    transition: all 0.5s ease;
     border-bottom: solid;
-    border-color:white;
+    border-color:rgb(30, 153, 253);
     border-width: 5px;
+    color: rgb(0, 106, 206) !important;
+}
+
+.nav-link:hover{
+    color: rgb(0, 106, 206) !important;
+}
+
+
+.nav-link-transform:hover{
+    color: black !important;
 }
 
 .nav-item
