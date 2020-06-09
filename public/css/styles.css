@@ -485,18 +485,21 @@ i.fab.fa-facebook-f {
 }
 
 
-i.fab.fa-instagram {
+i.fab.fa-instagram 
+{
     position: absolute;
     left: 50%;
     top: 20%;
 }
 
-hr.footer-line {
+hr.footer-line 
+{
     border: 1px solid black;
     width: 68%;
 }
 
-#myModal{
+#myModal
+{
     -webkit-box-shadow: -2px 16px 24px 0px rgba(45,117,132,1);
     -moz-box-shadow: -2px 16px 24px 0px rgba(45,117,132,1);
     box-shadow: -2px 16px 24px 0px rgba(45,117,132,1);
@@ -504,15 +507,87 @@ hr.footer-line {
 }
 
 
-.modal-title{
+.modal-title
+{
     color:#428bca;
     font-weight: bold;
 }
 
-label{
+label
+{
     color:#5bc0de;
 }
 
 .btn-info{
     background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+}
+
+#contact-content
+{
+    margin-top: 20px;
+    
+}
+
+#contact-right
+{
+    margin-bottom: 30px;
+    border-left: 3px solid gainsboro;
+}
+
+
+#call-us-row
+{
+    position: relative;
+}
+
+#call-us-right
+{
+    position: relative;
+    left: 29%;
+}
+
+#call-us-left
+{
+    position: absolute;
+    top: 16%;
+    font-size: 35px;
+    left: 18%;
+}
+
+
+#email-us-row
+{
+    position: relative;
+    top: 10%;
+}
+
+#email-us-right
+{
+    position: absolute;
+    left: 29%;
+}
+
+#email-us-left
+{
+    position: absolute;
+    font-size: 35px;
+    left: 18%;
+}
+
+#socials-row
+{
+    text-align: center;
+    position: relative;
+    top: 32%;
+    left: 10%;
+}
+
+i.fab.fa-facebook-square
+{
+    font-size: 27px;
+}
+
+i.fab.fa-instagram-square 
+{
+    font-size: 25px;
 }
