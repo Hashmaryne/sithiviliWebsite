@@ -30,5 +30,7 @@ class ContactFormController extends Controller
         ]);
 
         Mail::to('sithivili.project@gmail.com')->send(new ContactFormMail($data));
+        return redirect('contact')
+        ->with('message', 'Thanks for your message. We\'ll be in touch.');
     }
 }
