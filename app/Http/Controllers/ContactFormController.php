@@ -2,7 +2,12 @@
 
 namespace App\Http\Controllers;
 
+
+use App\Mail\ContactFormMail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+
+ini_set('max_execution_time', 300);
 
 class ContactFormController extends Controller
 {
