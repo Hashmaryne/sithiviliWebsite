@@ -94,7 +94,7 @@
             
             <!--right sec-->
             <div class="col-md-6" id="contact-right">
-                <form id="contact-form" role="form" action="{{ route('join.store') }}" method="POST">
+                <form id="contact-form" role="form" action="{{ route('contact.store') }}" method="POST">
                     <div class="controls">
                         <div class="row">
                             <div class="col-md-12">
