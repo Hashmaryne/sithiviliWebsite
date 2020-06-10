@@ -32,11 +32,7 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="\">Home
-                            
-                            </a>
-                        </li>
+                        
                         <li class="nav-item" >
                             <a class="nav-link" href="download">Download 
                             
@@ -114,7 +110,7 @@
 
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="form-group"> <label for="form_message">Your message *</label> <textarea id="message" name="massage" class="form-control" placeholder="Enter your message" rows="4" required="required" data-error="This field is required."></textarea> </div>
+                                <div class="form-group"> <label for="form_message">Your message *</label> <textarea id="message" name="form-message" class="form-control" placeholder="Enter your message" rows="4" required="required" data-error="This field is required."></textarea> </div>
                             </div>
 
                             @csrf

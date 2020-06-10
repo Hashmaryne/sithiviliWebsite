@@ -7,16 +7,16 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class JoinFormMail extends Mailable
+class ContactFormMail extends Mailable
 {
     use Queueable, SerializesModels;
-    public $data;
+
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($data)
+    public function __construct()
     {
         $this->data=$data;
     }
@@ -28,7 +28,7 @@ class JoinFormMail extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.join-us.join-form')
-                    ->subject('From Website: Join Us Form');
+        return $this->markdown('emails.contact.contact-form')
+                    ->subject('From Website: Contact Us Form');
     }
 }
