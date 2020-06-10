@@ -51,6 +51,10 @@ return [
             'transport' => 'mailgun',
         ],
 
+        'sendgrid' => [
+            'transport' => 'sendgrid',
+        ],
+
         'postmark' => [
             'transport' => 'postmark',
         ],
