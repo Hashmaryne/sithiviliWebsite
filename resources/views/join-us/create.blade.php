@@ -24,7 +24,7 @@
         <div class="navigation">
             <nav class="navbar navbar-expand-lg fixed-top navbar-light">
                 <div class="container"> 
-                    <a class="navbar-brand" href="#"> <p><img src="{{URL::asset('/images/sithivili_logo1.png')}}" class="logo-img">  Sithivili</p>
+                    <a class="navbar-brand" href="#"> <div class="header-name header-name-color"><img src="{{URL::asset('/images/sithivili_logo1.png')}}" class="logo-img"><span style="padding-left:20px;">Sithivili<span></div>
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -165,16 +165,19 @@
        
 </body>
 <script>
-$(document).ready(function(){
-	$(window).on("scroll",function(){
-  	var wn = $(window).scrollTop();
-    if(wn > 120){
-    	$(".navbar").css("background","#2D7584");
-    }
-    else{
-    	$(".navbar").css("background","transparent");
-    }
-  });
+$(function () {
+    $(window).on('scroll', function () {
+        if ( $(window).scrollTop() > 10 ) {
+            $('.navbar').addClass('nav-fixed');
+            $('.nav-link').addClass('nav-link-transform');
+            $('.header-name').removeClass('header-name-color');
+        } else {
+            $('.navbar').removeClass('nav-fixed');
+            $('.nav-link').removeClass('nav-link-transform');
+            $('.header-name').addClass('header-name-color');
+
+        }
+    });
 });
 </script>
 </html>
