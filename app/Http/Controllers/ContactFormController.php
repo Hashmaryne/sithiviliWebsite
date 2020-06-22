@@ -13,7 +13,7 @@ class ContactFormController extends Controller
 {
     public function create()
     {
-        return view('contact.create');
+        return view('download#contact-us');
     }
 
     public function store(Request $request)

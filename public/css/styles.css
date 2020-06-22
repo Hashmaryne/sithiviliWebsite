@@ -127,7 +127,7 @@ body{
     background-color: #0000005e;
 }
 
-#active
+.active
 {
     color: rgb(0, 106, 206) !important;
     border-bottom: solid;
@@ -329,7 +329,7 @@ nav {
 }
 
 
-.nav-item:hover
+#nav-item:hover
 {
     transition: all 0.5s ease;
     border-bottom: solid;
@@ -338,16 +338,16 @@ nav {
     color: rgb(0, 106, 206) !important;
 }
 
-.nav-link:hover{
+#nav-link:hover{
     color: rgb(0, 106, 206) !important;
 }
 
 
-.nav-link-transform:hover{
+#nav-link-transform:hover{
     color: black !important;
 }
 
-.nav-item
+#nav-item
 {
     margin-left: 5px;
 }
@@ -590,4 +590,49 @@ i.fab.fa-facebook-square
 i.fab.fa-instagram-square 
 {
     font-size: 25px;
+}
+
+#about-us
+{
+    padding-top:100px;
+}
+
+#about-us::before 
+{ 
+    display: block; 
+    content: " "; 
+    margin-top: -285px; 
+    height: 285px; 
+    visibility: hidden; 
+    pointer-events: none;
+}
+  
+#contact-us
+{
+    padding-top:100px;
+}
+
+#contact-us::before 
+{ 
+    display: block; 
+    content: " "; 
+    margin-top: -285px; 
+    height: 285px; 
+    visibility: hidden; 
+    pointer-events: none;
+}
+
+#join-us
+{
+    padding-top:100px;
+}
+
+#join-us::before 
+{ 
+    display: block; 
+    content: " "; 
+    margin-top: -285px; 
+    height: 285px; 
+    visibility: hidden; 
+    pointer-events: none;
 }
