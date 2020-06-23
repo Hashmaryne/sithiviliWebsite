@@ -51,8 +51,10 @@ Route::get('/reset-password/{user}','ResetPasswordsController@displayPage');
 
 Route::post('/reset', 'ResetPasswordsController@postResetPass');
 
-Route::get('#join-us', 'JoinFormController@create')->name('join.create');
-Route::post('#join-us', 'JoinFormController@store')->name('join.store');
+Route::get('/join-us', 'JoinFormController@create')->name('join.create');
+Route::post('/join-us', 'JoinFormController@store')->name('join.store');
    
-Route::get('#contact-us', 'ContactFormController@create')->name('contact.create');
-Route::post('#contact-us', 'ContactFormController@store')->name('contact.store');
+Route::get('/contact-us', 'ContactFormController@create')->name('contact.create');
+Route::post('/contact-us', 'ContactFormController@store')->name('contact.store');
+//Route::get('contact',['as' => 'contact', 'uses' => 'ContactFormController@create']);
+//Route::post('contact',['as' => 'contact', 'uses' => 'ContactFormController@store']);

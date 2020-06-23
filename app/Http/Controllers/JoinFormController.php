@@ -12,7 +12,7 @@ class JoinFormController extends Controller
 {
     public function create()
     {
-        return view('join-us.create');
+        return view('index');
     }
 
     public function store(Request $request)

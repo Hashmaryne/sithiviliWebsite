@@ -36,7 +36,7 @@
 
 <body>
     <!--Header starts-->
-    <header id="header">
+    <header id="header" class="section">
         <div class="page-head">
             
             <!--Navbar starts-->
@@ -91,7 +91,7 @@
 
 
     <!--Home section-->
-    <section id="home">
+    <section id="home" class="section">
         <div class="container">
             <div class="row" id="section">
                 <div class="col-md-6" style="position:relative">
@@ -133,7 +133,7 @@
 
 
     <!--About us section-->
-    <section id="about-us" class="d-flex align-items-center">
+    <section id="about-us" class="section">
         <div class="container">
             <!--about us heading  starts-->
             <div class="row">
@@ -155,7 +155,7 @@
     <!--About us section ends-->
 
     <!--Join us section-->
-    <section id="join-us" >
+    <section id="join-us" class="section" >
         <div class="container">
             <!--about us heading  starts-->
             <div class="row">
@@ -255,7 +255,7 @@
     <!--Join us section ends-->
 
     <!--Contact us section-->
-    <section id="contact-us" >
+    <section id="contact-us" class="section">
         <div class="container">
             <!--contact us heading  starts-->
             <div class="row">
@@ -349,6 +349,28 @@
       $(this).addClass("active");
    });
 });
+
+  var nav_sections = $('section');
+  var main_nav = $('.navbar');
+
+  $(window).on('scroll', function() {
+    var cur_pos = $(this).scrollTop() + 200;
+
+    nav_sections.each(function() {
+      var top = $(this).offset().top,
+        bottom = top + $(this).outerHeight();
+
+      if (cur_pos >= top && cur_pos <= bottom) {
+        if (cur_pos <= bottom) {
+          main_nav.find('li').removeClass('active');
+        }
+        main_nav.find('a[href="#' + $(this).attr('id') + '"]').parent('li').addClass('active');
+      }
+      if (cur_pos < 300) {
+        $(".nav-menu ul:first li:first").addClass('active');
+      }
+    });
+  });
 
 </script>
 </html>
