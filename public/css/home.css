@@ -10,9 +10,10 @@
 
 .banner-section
 {
-    background: #C6E2FF;
-    height: auto;
+    background: #9cccff;
+    height: 300px;
     margin-top: 80px;
+    
 }
 
 .css-selector {
@@ -41,11 +42,11 @@
 }
 
 .banner-section h3{
-    color: #334252;
-    font-size: 40px;
+    font-family: "Playfair Display", serif;
+    color: #181414f3;
+    font-size: 42px;
     margin: 0 auto;
     font-weight: 600;
-    font-family: 'Hind', sans-serif;
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
     -webkit-animation-duration: 2s;
@@ -57,7 +58,7 @@
 }
 
 .banner-section span{
-    color:#007FFF;
+    color:#00a2ff;
 }
 
 .download-btn{

@@ -24,6 +24,7 @@
     <!--google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Catamaran:900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Playfair&display=swap" rel="stylesheet">
 
     <!--animatons-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -87,7 +88,7 @@
                         </div>
 
                         <div class="col-md-6" id="banner-left">
-                            <img src="{{URL::asset('/images/HomeScreen.png')}}" class="homescreen-img">
+                            <img src="{{URL::asset('/images/HomeScreen.png')}}" class="homescreen-img" data-aos="fade-left">
                         </div>
                     </div>
                 </div>
@@ -95,8 +96,8 @@
  
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-  <path fill="#C6E2FF" fill-opacity="1" d="M0,32L48,69.3C96,107,192,181,288,224C384,267,480,277,576,277.3C672,277,768,267,864,224C960,181,1056,107,1152,101.3C1248,96,1344,160,1392,192L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
-</svg>
+            <path class="path" fill="#9cccff" fill-opacity="1" d="M0,32L48,53.3C96,75,192,117,288,149.3C384,181,480,203,576,192C672,181,768,139,864,101.3C960,64,1056,32,1152,48C1248,64,1344,128,1392,160L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+            </svg>
             <!--download app ends-->
             
         </div>
@@ -106,7 +107,43 @@
 
     <!--Home section-->
     <section id="home" class="section">
-        
+        <!--container-->
+        <div class="container">
+
+            <!--row-->
+            <div class="row">
+                <div class="col-md-12" id="features-imgs">
+                    <img src="{{URL::asset('/images/EC-Screen.png')}}" class="emergency-screen-img" data-aos="fade-right">
+                    <img src="{{URL::asset('/images/ni-screen.png')}}" class="institutes-screen-img" data-aos="fade-left">
+                    <img src="{{URL::asset('/images/chatScreen.png')}}" class="chatscreen-img" data-aos="fade-up">
+                </div>
+            </div>
+            <!--row ends-->
+
+            <!--row-->
+            <div class="row" >
+                <div class="col-md-4" data-aos="fade-up">
+                    <p class="feature-icons-wrap"><img src="{{URL::asset('/images/emergency.png')}}" class="feature-icons"><p>
+                    <h5> <span> </span>Easy Access to Emergency Contacts</h5>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor. </p>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up">
+                    <p class="feature-icons-wrap"><img src="{{URL::asset('/images/app.png')}}" class="feature-icons"><p>
+                    <h5> <span> </span>Chat to Us Annonymously</h5>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor. </p>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up">
+                    <p class="feature-icons-wrap"><img src="{{URL::asset('/images/health.png')}}" class="feature-icons"><p>
+                    <h5> <span> </span>Find Nearby Mental Health Institutes</h5>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor. </p>
+                </div>
+            </div>
+            <!--row ends-->
+
+        </div>
+        <!--container ends-->
     </section>
     <!--Home section ends-->
 
