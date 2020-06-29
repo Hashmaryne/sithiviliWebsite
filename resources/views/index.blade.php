@@ -74,15 +74,29 @@
             <!--Navbar ends-->
 
             <!--download app starts-->
-            <section class="banner-section">
+            <div class="banner-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6" id="banner-right">
+                            <h3>Don't Lose<span> Hope</span>, <br><span>Believe</span> in yourself and all that you are.</h3>
+                            <button class="download-btn">
+                                Download Sithivili
+                            </button>
 
-                <div style="margin-top:50px; padding:100px;">
-                    <h3 style="">Don't Lose<span> Hope</span>, <br><span>Believe</span> in yourself and all that you are.</h3>
-                    <button style="">
-                        Download Sithivili
-                    </button>
+                            
+                        </div>
+
+                        <div class="col-md-6" id="banner-left">
+                            <img src="{{URL::asset('/images/HomeScreen.png')}}" class="homescreen-img">
+                        </div>
+                    </div>
                 </div>
-            </section>
+
+ 
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#C6E2FF" fill-opacity="1" d="M0,32L48,69.3C96,107,192,181,288,224C384,267,480,277,576,277.3C672,277,768,267,864,224C960,181,1056,107,1152,101.3C1248,96,1344,160,1392,192L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+</svg>
             <!--download app ends-->
             
         </div>
@@ -92,49 +106,13 @@
 
     <!--Home section-->
     <section id="home" class="section">
-        <div class="container">
-            <div class="row" id="section">
-                <div class="col-md-6" style="position:relative">
-                    <p class="feature_txt"> Talk to someone </p>
-                    <p class="feature-des"> Brief description about the feature. </p>
-                </div>
-
-                <div class="col-md-6" id="img-section">
-                    <img src="{{URL::asset('/images/chat-screen.PNG')}}">
-                </div>
-            </div>
-
-
-            <div class="row flex-column-reverse flex-md-row" id="section">
-                <div class="col-md-6" id="img-section">
-                <img src="{{URL::asset('/images/Emergancy Contacts-screen.png')}}">
-                </div>
-
-                <div class="col-md-6">
-                    <p class="feature_txt"> Easy access to emgercency contacts </p>
-                    <p class="feature-des"> Brief description about the feature. </p>
-                </div>
-            </div>
-
-            <div class="row" id="section">
-                <div class="col-md-6">
-                    <p class="feature_txt">Find mental health institutions around you</p>
-                    <p class="feature-des"> Brief description about the feature.</p>
-                </div>
-
-                <div class="col-md-6">
-                    <img src="{{URL::asset('/images/insititues-screen.png')}}">
-                </div>
-            </div>
-
-        </div>
+        
     </section>
     <!--Home section ends-->
 
-
     <!--About us section-->
-    <section id="about-us" class="section">
-        <div class="container">
+    <section id="about-us" class="section" >
+        <div class="container"  data-aos="fade-up" >
             <!--about us heading  starts-->
             <div class="row">
                 <div class="col-md-12"><h2 class="heading-sec">Who we are</h4></div>
@@ -142,7 +120,7 @@
             <!--about us heading  ends--> 
             <div class="page_content">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12" >
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         <p>Vel pharetra vel turpis nunc eget lorem dolor. Nunc lobortis mattis aliquam faucibus purus in. Feugiat in fermentum posuere urna nec tincidunt praesent semper feugiat. Suspendisse in est ante in nibh mauris cursus mattis molestie. Neque aliquam vestibulum morbi blandit cursus risus at ultrices mi. Posuere morbi leo urna molestie at elementum eu. Condimentum mattis pellentesque id nibh tortor. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Laoreet sit amet cursus sit amet dictum sit. Et odio pellentesque diam volutpat commodo sed egestas. Eget est lorem ipsum dolor. Est pellentesque elit ullamcorper dignissim. Purus gravida quis blandit turpis cursus in hac habitasse platea. Ornare arcu dui vivamus arcu felis bibendum ut. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Orci porta non pulvinar neque laoreet. Euismod quis viverra nibh cras pulvinar. Habitant morbi tristique senectus et netus.</p>
@@ -156,7 +134,7 @@
 
     <!--Join us section-->
     <section id="join-us" class="section" >
-        <div class="container">
+        <div class="container"  data-aos="fade-up" >
             <!--about us heading  starts-->
             <div class="row">
                 <div class="col-md-12"><h2 class="heading-sec">Volunteer Opportunities</h4></div>
@@ -256,7 +234,7 @@
 
     <!--Contact us section-->
     <section id="contact-us" class="section">
-        <div class="container">
+        <div class="container"  data-aos="fade-up">
             <!--contact us heading  starts-->
             <div class="row">
                 <div class="col-md-12"><h2 class="heading-sec">Have any questions? Reach out to us!</h4></div>
@@ -324,7 +302,15 @@
 </body>
 
 <script>
-    AOS.init();
+function aos_init() {
+    AOS.init({
+      duration: 2000,
+      once: false
+    });
+  }
+  $(window).on('load', function() {
+    aos_init();
+  });
 
     $(function () {
         $(window).on('scroll', function () {
