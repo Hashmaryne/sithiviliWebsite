@@ -113,7 +113,7 @@
             <!--row-->
             <div class="row">
                 <div class="col-md-12" id="features-imgs">
-                    <img src="{{URL::asset('/images/EC-Screen.png')}}" class="emergency-screen-img" data-aos="fade-right">
+                    <img src="{{URL::asset('/images/ec-screen.png')}}" class="emergency-screen-img" data-aos="fade-right">
                     <img src="{{URL::asset('/images/ni-screen.png')}}" class="institutes-screen-img" data-aos="fade-left">
                     <img src="{{URL::asset('/images/chatScreen.png')}}" class="chatscreen-img" data-aos="fade-up">
                 </div>
