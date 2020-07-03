@@ -479,15 +479,14 @@ p.footer-icons {
     position: relative;
     height: 50px;
 }
-
-i.fab.fa-facebook-f {
+#icon-fb {
     position: absolute;
     left: 47%;
     top: 20%;
 }
 
 
-i.fab.fa-instagram 
+#icon-insta
 {
     position: absolute;
     left: 50%;
@@ -520,14 +519,27 @@ label
     color:#5bc0de;
 }
 
-.btn-info{
-    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+.btn-info
+{
+    background-color: #66a6ff!important;
+    border-color:#66a6ff!important;
+    border-radius: 60px!important;
+    /* height: 54px; */
+    font-size: 17px!important;
+    padding: 12px!important;
+    width: 136px!important;
+    
 }
-
+.btn-info:hover
+{
+    background-color: white!important;
+    color: #66a6ff!important;
+    border-color:#66a6ff;
+}
 #contact-content
 {
     margin-top: 20px;
-    
+
 }
 
 #contact-right
@@ -550,8 +562,9 @@ label
 
 #call-us-left
 {
+    color: #80808096;
     position: absolute;
-    top: 16%;
+    top: 35%;
     font-size: 35px;
     left: 18%;
 }
@@ -571,6 +584,7 @@ label
 
 #email-us-left
 {
+    color: #80808096;
     position: absolute;
     font-size: 35px;
     left: 18%;
@@ -583,16 +597,12 @@ label
     top: 32%;
     left: 10%;
 }
-
-i.fab.fa-facebook-square
+.fab.fa-instagram-square
 {
     font-size: 27px;
 }
 
-i.fab.fa-instagram-square 
-{
-    font-size: 25px;
-}
+
 
 #about-us
 {
@@ -684,3 +694,54 @@ i.fab.fa-instagram-square
     height: 70px;
    
 }
+
+div#form-card
+{
+    margin: 30px;
+    padding: 50px;
+    background-color: #8080800d;
+    border-radius: 28px;
+}
+
+#form-btn
+{
+    text-align: center;
+}
+
+div#form-card-contact
+{
+    padding: 50px;
+    background-color: #8080800d;
+    border-radius: 28px;
+}
+
+.contact-txt-heading
+{
+    color:rgba(0, 89, 255, 0.58);
+}
+
+.fab {
+    padding: 15px;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 112px;
+  }
+
+  .fab:hover {
+    opacity: 0.7;
+}
+
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  

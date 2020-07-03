@@ -124,19 +124,19 @@
             <div class="row" >
                 <div class="col-md-4" data-aos="fade-up">
                     <p class="feature-icons-wrap"><img src="{{URL::asset('/images/emergency.png')}}" class="feature-icons"><p>
-                    <h5> <span> </span>Easy Access to Emergency Contacts</h5>
+                    <h5 class="feature-heading">Easy Access to Emergency Contacts</h5>
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor. </p>
                 </div>
 
                 <div class="col-md-4" data-aos="fade-up">
                     <p class="feature-icons-wrap"><img src="{{URL::asset('/images/app.png')}}" class="feature-icons"><p>
-                    <h5> <span> </span>Chat to Us Annonymously</h5>
+                    <h5 class="feature-heading">Chat to Us Annonymously</h5>
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor. </p>
                 </div>
 
                 <div class="col-md-4" data-aos="fade-up">
                     <p class="feature-icons-wrap"><img src="{{URL::asset('/images/health.png')}}" class="feature-icons"><p>
-                    <h5> <span> </span>Find Nearby Mental Health Institutes</h5>
+                    <h5 class="feature-heading"> Find Nearby Mental Health Institutes</h5>
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor. </p>
                 </div>
             </div>
@@ -184,88 +184,63 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </div>
-    
+            <!--End row-->
 
-            <div class="row justify-content-center">
-                <!-- Trigger the modal with a button -->
-                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Volunteer as a Campanion</button>
-
-                <!-- Modal -->
-                <div class="modal fade" id="myModal" role="dialog">
-                    <div class="modal-dialog">
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title">Join Us</h4>
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                
+            <div class="card" id="form-card">
+                <form id="contact-form" role="form" action="{{ route('join.store') }}" method="POST">
+                    <div class="controls">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group"> <label for="form_name">First name *</label> <input id="form_name" type="text" name="name" class="form-control" placeholder="Enter first name *" required="required" data-error="This field is required."> </div>
                             </div>
-
-                            <div class="modal-body">
-                                <div class="card mt-2 mx-auto p-4 bg-light">
-                                        <div class="card-body bg-light">
-                                            <div class="container">
-                                                <form id="contact-form" role="form" action="{{ route('join.store') }}" method="POST">
-                                                    <div class="controls">
-                                                        <div class="row">
-                                                            <div class="col-md-6">
-                                                                <div class="form-group"> <label for="form_name">First name *</label> <input id="form_name" type="text" name="name" class="form-control" placeholder="Enter first name *" required="required" data-error="This field is required."> </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <div class="form-group"> <label for="form_lastname">Last name *</label> <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Enter last name *" required="required" data-error="This field is required."> </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="row">
-                                                            <div class="col-md-6">
-                                                                <div class="form-group"> <label for="form_name">NIC *</label> <input id="form_nic" type="text" name="nic" class="form-control" placeholder="Enter NIC *" required="required" data-error="This field is required."> </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <div class="form-group"> <label for="form_lastname"  >Date of birth *</label> <input id="form_dob" type="date" name="dob" class="form-control" required="required" data-error="This field is required."> </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="row">
-                                                            <div class="col-md-6">
-                                                                <div class="form-group"> <label for="form_email">Email *</label> <input id="form_email" type="email" name="email" class="form-control" placeholder="Enter email *" required="required" data-error="Valid email is required."> </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <div class="form-group"> <label for="form_email">Mobile number *</label> <input id="form_mobile"  name="mobile" class="form-control" placeholder="Enter number *" required="required" data-error="This field is required."> </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-md-12">
-                                                                <div class="form-group"> <label for="form_message">Qualifications *</label> <textarea id="form_qualifications" name="qualifications" class="form-control" placeholder="Enter your qualifications" rows="4" required="required" data-error="This field is required."></textarea> </div>
-                                                            </div>
-
-                                                            <div class="col-md-12">
-                                                                <div class="form-group"> <label for="form_message">Commentts</label> <textarea id="form_message" name="comments" class="form-control" placeholder="Comments..." rows="4" ></textarea> </div>
-                                                            </div>
-
-                                                            @csrf
-
-                                                            <div class="col-md-12"> <input type="submit" class="btn btn-info btn-send pt-2 btn-block " value="Submit"> </div>
-                                                        </div>
-                                                    </div>
-                                                
-                                                
-                                                </form>
-                                            </div>
-                                        </div>
-                                </div> <!-- /.8 -->
+                            <div class="col-md-6">
+                                <div class="form-group"> <label for="form_lastname">Last name *</label> <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Enter last name *" required="required" data-error="This field is required."> </div>
                             </div>
                         </div>
-                        
-                    </div><!--model dialog-->
-                </div><!--model fade-->
-            </div> <!--row justify-->
 
-            <div class="row">
-                <div class="col-md-12">
-                    <p> Please <a href="#">Contact us</a> if you have any questions <p>
-                </div>
-            </div>
-        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group"> <label for="form_name">NIC *</label> <input id="form_nic" type="text" name="nic" class="form-control" placeholder="Enter NIC *" required="required" data-error="This field is required."> </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group"> <label for="form_lastname"  >Date of birth *</label> <input id="form_dob" type="date" name="dob" class="form-control" required="required" data-error="This field is required."> </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group"> <label for="form_email">Email *</label> <input id="form_email" type="email" name="email" class="form-control" placeholder="Enter email *" required="required" data-error="Valid email is required."> </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group"> <label for="form_email">Mobile number *</label> <input id="form_mobile"  name="mobile" class="form-control" placeholder="Enter number *" required="required" data-error="This field is required."> </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group"> <label for="form_message">Qualifications *</label> <textarea id="form_qualifications" name="qualifications" class="form-control" placeholder="Enter your qualifications" rows="4" required="required" data-error="This field is required."></textarea> </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group"> <label for="form_message">Commentts</label> <textarea id="form_message" name="comments" class="form-control" placeholder="Comments..." rows="4" ></textarea> </div>
+                            </div>
+                        </div>
+                            @csrf
+
+                            <!--<div class="col-md-12"> <input type="submit" class="btn btn-info btn-send pt-2 btn-block"> </div>-->
+                            <div class="row align-items-center">
+                                <div class="col-md-12" id="form-btn">
+                                    <button type="submit" class="btn btn-info">
+                                        <span class="txt">Submit</span>
+                                        <span class="round"><i class="fa fa-chevron-right"></i></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            <div> 
+            <!-- form card ends-->
+        </div> 
     </section>
     <!--Join us section ends-->
 
@@ -285,48 +260,59 @@
                 <div class="col-md-6" id="contact-left">
                     <div class="row" id="call-us-row">
                         <div clas="col-md-6" id="call-us-left"><i class="fas fa-phone-volume"></i></div>
-                        <div class="col-md-6" id="call-us-right"> <p><b>CALL US UP ON</b><br>Rusiru: +94 75 729 1350 <br>Hiruksha: +94 77 802 7599 <br>Hashmaryne: +94 77 006 5700</p></div>
+                        <div class="col-md-6" id="call-us-right"> <p class="contact-txt-heading"><b>CALL US UP ON</b></p> <p>Rusiru: +94 75 729 1350 <br>Hiruksha: +94 77 802 7599 <br>Hashmaryne: +94 77 006 5700</p></div>
                     </div>
 
                     <div class="row" id="email-us-row">
                         <div clas="col-md-6" id="email-us-left"><i class="fas fa-at"></i></div>
-                        <div class="col-md-6" id="email-us-right"> <p><b>SEND US AN EMAIL</b><br>sithivili.project@gmail.com</p></div>
+                        <div class="col-md-6" id="email-us-right"> <p class="contact-txt-heading"><b>SEND US AN EMAIL</b></p> <p>sithivili.project@gmail.com</p></div>
                     </div>
 
                     <div class="row" id="socials-row">
-                        <p><b>OR DROP US A MESSAGE THROUGH OUR SOCIALS </b><br> <i class="fab fa-facebook-square"></i>  <i class="fab fa-instagram-square"></i> </p>
+                        <p class="contact-txt-heading"><b>OR DROP US A MESSAGE THROUGH OUR SOCIALS </b> 
+                         <br><i class="fab fa-facebook"></i> <i class="fab fa-instagram"></i></p>
                     </div>
+
                 </div>
                 <!--left sec ends-->
                 
                 <!--right sec-->
                 <div class="col-md-6" id="contact-right">
-                    <form id="contact-form" role="form" action="{{ route('contact.store') }}" method="POST">
-                        <div class="controls">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group"> <label for="form_name">Name *</label> <input id="form_name" type="text" name="name" class="form-control" placeholder="Enter name *" required="required" data-error="This field is required."> </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group"> <label for="form_email">Email *</label> <input id="form_email" type="email" name="email" class="form-control" placeholder="Enter email *" required="required" data-error="Valid email is required."> </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group"> <label for="form_message">Your message *</label> <textarea id="message" name="form-message" class="form-control" placeholder="Enter your message" rows="4" required="required" data-error="This field is required."></textarea> </div>
+                    <div class="card" id="form-card-contact">
+                        <form id="contact-form" role="form" action="{{ route('contact.store') }}" method="POST">
+                            <div class="controls">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group"> <label for="form_name">Name *</label> <input id="form_name" type="text" name="name" class="form-control" placeholder="Enter name *" required="required" data-error="This field is required."> </div>
+                                    </div>
                                 </div>
 
-                                @csrf
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group"> <label for="form_email">Email *</label> <input id="form_email" type="email" name="email" class="form-control" placeholder="Enter email *" required="required" data-error="Valid email is required."> </div>
+                                    </div>
+                                </div>
 
-                                <div class="col-md-12"> <input type="submit" class="btn btn-info btn-send pt-2 btn-block " value="Submit"> </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group"> <label for="form_message">Your message *</label> <textarea id="message" name="form-message" class="form-control" placeholder="Enter your message" rows="4" required="required" data-error="This field is required."></textarea> </div>
+                                    </div>
+
+                                    @csrf
+
+                                </div>
+                                <div class="row align-items-center">
+                                <div class="col-md-12" id="form-btn">
+                                    <button type="submit" class="btn btn-info">
+                                        <span class="txt">Send</span>
+                                        <span class="round"><i class="fa fa-chevron-right"></i></span>
+                                    </button>
+                                </div>
                             </div>
-                        </div>
-                    
-                    </form>
+                            </div>
+                        
+                        </form>
+                     </div>
                 </div>
                 <!--right sec ends-->
 

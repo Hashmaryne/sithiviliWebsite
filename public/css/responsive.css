@@ -171,9 +171,9 @@
             height: 50px;
         }
         
-        i.fab.fa-facebook-f {
+        i.fab.fa-facebook {
             position: absolute;
-            left: 40%;
+            left: 33%;
             top: 20%;
         }
         
@@ -186,5 +186,6 @@
         hr.footer-line {
             border: 1px solid black;
             width: 68%;
+           
         }
 } 

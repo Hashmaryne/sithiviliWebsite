@@ -32,7 +32,7 @@
 
         <div class="row" id="footer-row">
             <div class="col">
-                <p class="footer-icons"><i class="fab fa-facebook-f"></i>  <i class="fab fa-instagram"></i></p>
+                <p class="footer-icons"><i class="fab fa-facebook" id="icon-fb"></i>  <i class="fab fa-instagram" id="icon-insta"></i></p>
                 <hr class="footer-line">
             </div>
         </div>
