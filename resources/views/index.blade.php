@@ -246,37 +246,37 @@
 
     <!--Contact us section-->
     <section id="contact-us" class="section">
-        <div class="container"  data-aos="fade-up">
-            <!--contact us heading  starts-->
-            <div class="row">
-                <div class="col-md-12"><h2 class="heading-sec">Have any questions? Reach out to us!</h4></div>
-            </div>
-            <!--contact us heading  ends--> 
-
-            <!--row-->
+        <div class="container">
             <div class="row" id="contact-content">
-
                 <!--left sec-->
                 <div class="col-md-6" id="contact-left">
-                    <div class="row" id="call-us-row">
-                        <div clas="col-md-6" id="call-us-left"><i class="fas fa-phone-volume"></i></div>
-                        <div class="col-md-6" id="call-us-right"> <p class="contact-txt-heading"><b>CALL US UP ON</b></p> <p>Rusiru: +94 75 729 1350 <br>Hiruksha: +94 77 802 7599 <br>Hashmaryne: +94 77 006 5700</p></div>
+                    <div class="container">
+                        <div class="row" id="call-us-row">
+                            <div clas="col-md-6" id="call-us-left"><i class="fas fa-phone-volume"></i></div>
+                            <div class="col-md-6" id="call-us-right"> 
+                                <p class="contact-txt-heading"><b>CALL US UP ON</b></p> 
+                                <p class="contact-para">Rusiru: +94 75 729 1350</p>
+                                <p class="contact-para">Hiruksha: +94 77 802 7599  </p>
+                                <p class="contact-para">Hashmaryne: +94 77 006 5700</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="row" id="email-us-row">
-                        <div clas="col-md-6" id="email-us-left"><i class="fas fa-at"></i></div>
-                        <div class="col-md-6" id="email-us-right"> <p class="contact-txt-heading"><b>SEND US AN EMAIL</b></p> <p>sithivili.project@gmail.com</p></div>
+                    <div class="container">
+                        <div class="row" id="email-us-row">
+                            <div clas="col-md-6" id="email-us-left"><i class="fas fa-at"></i></div>
+                            <div class="col-md-6" id="email-us-right"> <p class="contact-txt-heading"><b>SEND US AN EMAIL</b></p> <p class="contact-para" id="contact-email"> <br>sithivili.project@gmail.com</p></div>
+                        </div>
                     </div>
 
                     <div class="row" id="socials-row">
                         <p class="contact-txt-heading"><b>OR DROP US A MESSAGE THROUGH OUR SOCIALS </b> 
-                         <br><i class="fab fa-facebook"></i> <i class="fab fa-instagram"></i></p>
+                            <br><i class="fab fa-facebook"></i> <i class="fab fa-instagram"></i></p>
                     </div>
 
                 </div>
                 <!--left sec ends-->
-                
-                <!--right sec-->
+
                 <div class="col-md-6" id="contact-right">
                     <div class="card" id="form-card-contact">
                         <form id="contact-form" role="form" action="{{ route('contact.store') }}" method="POST">
@@ -312,10 +312,9 @@
                             </div>
                         
                         </form>
-                     </div>
+                    </div>
                 </div>
-                <!--right sec ends-->
-
+                    <!--right sec ends-->
             </div>
             <!--row ends-->
         </div>

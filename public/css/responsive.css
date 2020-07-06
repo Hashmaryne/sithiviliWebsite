@@ -2,7 +2,7 @@
 
       .navbar 
       {
-            background: #2D7584!important;
+            background: #66a6ff!important;
       }
     
       .navbar .navbar-brand, .navbar .nav-link 
@@ -131,61 +131,149 @@
             top: 36%;
         }
 
-        div#content-row {
+      div#content-row {
             position: relative;
-        }
-        
-        i.fas.fa-check-circle {
-            /* width: 217px; */
+      }
+      
+      i.fas.fa-check-circle 
+      {
+      /* width: 217px; */
             position: relative;
             left: 38%;
             height: 150px;
             font-size: 72px;
             color: #007bff;
-        }
+      }
 
-        .fa-frown {
-            /* width: 217px; */
+      .fa-frown 
+      {
+      /* width: 217px; */
             position: relative;
             left: 38%;
             height: 150px;
             font-size: 72px;
             color: #007bff;
-        }
-        
-        p.ty-text {
+      }
+      
+      p.ty-text 
+      {
             font-size: 32px;
             text-align: center;
             font-weight: bold;
             color: #00d0ff;
-        }
-        
-        p.more-ty {
+      }
+      
+      p.more-ty 
+      {
             text-align: center;
             font-size: 18px;
-        }
-        
-        p.footer-icons {
+      }
+      
+      p.footer-icons 
+      {
             font-size: 22px;
             position: relative;
             height: 50px;
-        }
-        
-        i.fab.fa-facebook {
+      }
+      
+      i.fab.fa-facebook 
+      {
             position: absolute;
             left: 33%;
             top: 20%;
-        }
-        
-        i.fab.fa-instagram {
+      }
+      
+      i.fab.fa-instagram 
+      {
             position: absolute;
             left: 50%;
             top: 20%;
-        }
-        
-        hr.footer-line {
+      }
+      
+      hr.footer-line 
+      {
             border: 1px solid black;
             width: 68%;
-           
-        }
+      }
+
+      .banner-section
+      {
+            height: 527px!important;
+      }
+
+      .homescreen-img
+      {
+            height: 418px!important;
+            left: 15%!important;
+            top: 36%!important;
+      }
+
+      .download-btn
+      {
+            top: 120%!important;;
+      }
+
+      
+      .banner-section h3
+      {
+            font-size: 33px;
+      }
+
+      .emergency-screen-img
+      {
+      
+            height: 282px;
+            left: -6px;
+            top: 182px;
+      }
+
+      .chatscreen-img
+      {
+            
+            height: 318px;
+            left: 24%;
+            top: 33%;
+      }
+
+      .institutes-screen-img
+      {
+      
+            height: 282px;
+            left: 61%;
+            top: 182px;
+      }
+
+      div#contact-left 
+      {
+            height: 500px;
+      }
+
+      i.fab.fa-facebook 
+      {
+            left: 33%;
+            top: 93%;
+      }
+
+      i.fab.fa-instagram 
+      {
+            left: 50%;
+            top: 93%;
+      }
+
+      .contact-txt-heading 
+      {
+            font-size: 14px!important;
+      }
+
+      #call-us-left 
+      {
+            left: 3%;
+      }
+
+      #email-us-left
+      {
+            left: 3%;
+      }
+      
+     
 } 

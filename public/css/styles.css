@@ -356,7 +356,7 @@ nav {
 
 .background-nav
 {   
-    background: #2D7584;
+    background: #66a6ff;
 
 }
 
@@ -556,7 +556,7 @@ label
 
 #call-us-right
 {
-    position: relative;
+    
     left: 29%;
 }
 
@@ -718,9 +718,11 @@ div#form-card-contact
 .contact-txt-heading
 {
     color:rgba(0, 89, 255, 0.58);
+    display:block;
 }
 
-.fab {
+.fab 
+{
     padding: 15px;
     font-size: 20px;
     width: 50px;
@@ -728,20 +730,33 @@ div#form-card-contact
     text-decoration: none;
     margin: 5px 2px;
     border-radius: 112px;
-  }
+}
 
-  .fab:hover {
+  .fab:hover 
+{
     opacity: 0.7;
 }
 
 
-  .fa-facebook {
+.fa-facebook 
+{
     background: #3B5998;
     color: white;
-  }
+}
 
-  .fa-instagram {
+.fa-instagram 
+{
     background: #125688;
     color: white;
-  }
-  
+}
+
+p.contact-para 
+{
+    display: inline-block;
+}
+
+p#contact-email 
+{
+    /* margin: -40px; */
+    margin-top: -26px;
+}

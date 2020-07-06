@@ -26,7 +26,7 @@
             <div class="col"> 
                 <i class="fas fa-check-circle"></i>
                 <p class="ty-text"> Password successfully changed </p>
-                <p class ="more-ty"> Please login via the app using your new password. Want to know more about Sithivili? <a href="/"> Click here </a> to vist our website </p>
+                <p class ="more-ty"> Please login via the app using your new password. <!--Want to know more about Sithivili?<a href="/"> Click here </a> to vist our website -->  </p>
             </div>
         </div>
 
