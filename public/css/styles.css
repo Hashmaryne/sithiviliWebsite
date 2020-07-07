@@ -481,16 +481,16 @@ p.footer-icons {
 }
 #icon-fb {
     position: absolute;
-    left: 47%;
-    top: 20%;
+    left: 43%!important;
+    top: 2%!important;
 }
 
 
 #icon-insta
 {
     position: absolute;
-    left: 50%;
-    top: 20%;
+    left: 50%!important;
+    top: 2%!important;
 }
 
 hr.footer-line 
@@ -760,3 +760,4 @@ p#contact-email
     /* margin: -40px; */
     margin-top: -26px;
 }
+

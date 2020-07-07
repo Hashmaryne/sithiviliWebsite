@@ -32,7 +32,8 @@
 
         <div class="row" id="footer-row">
             <div class="col">
-                <p class="footer-icons"><i class="fab fa-facebook" id="icon-fb"></i>  <i class="fab fa-instagram" id="icon-insta"></i></p>
+                <p class="footer-icons"> <a href="https://facebook.com/pages/category/Product-Service/Project-Sithivili-106793030832187/"> <i class="fab fa-facebook" id="icon-fb"></i></a>  
+                <a href="https://instagram.com/project_sithivili?igshid=ig4r84ve9r40"><i class="fab fa-instagram" id="icon-insta"></i></a></p>
                 <hr class="footer-line">
             </div>
         </div>

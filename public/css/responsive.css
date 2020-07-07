@@ -275,5 +275,15 @@
             left: 3%;
       }
       
-     
+     #icon-fb
+     {
+            left: 31%!important;
+            top: 7%!important;
+     }
+
+     #icon-insta
+     {
+            left: 50%;
+            top: 7%;
+     }
 } 
