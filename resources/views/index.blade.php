@@ -200,7 +200,10 @@
 
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="form-group"> <label for="form_name">NIC *</label> <input id="form_nic" type="text" name="nic" class="form-control" placeholder="Enter NIC *" required="required" data-error="This field is required."> </div>
+                                <div class="form-group"> <label for="form_name">NIC *</label> <input id="form_nic" type="text" name="nic" class="form-control" placeholder="Enter NIC *" required="required" data-error=" field is required."> </div>
+                                @error('nic')
+                                <span>{{$message}}</span>
+                                @enderror
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group"> <label for="form_lastname"  >Date of birth *</label> <input id="form_dob" type="date" name="dob" class="form-control" required="required" data-error="This field is required."> </div>
@@ -254,10 +257,12 @@
                         <div class="row" id="call-us-row">
                             <div clas="col-md-6" id="call-us-left"><i class="fas fa-phone-volume"></i></div>
                             <div class="col-md-6" id="call-us-right"> 
-                                <p class="contact-txt-heading"><b>CALL US UP ON</b></p> 
-                                <p class="contact-para">Rusiru: +94 75 729 1350</p>
-                                <p class="contact-para">Hiruksha: +94 77 802 7599  </p>
-                                <p class="contact-para">Hashmaryne: +94 77 006 5700</p>
+                                <h6 class="contact-txt-heading"><b>CALL US UP ON</b><br></h6> 
+                                
+                                <div class="contact-para">Rusiru: +94 75 729 1350</div>
+                                <div class="contact-para">Hiruksha: +94 77 802 7599  </div>
+                                <div class="contact-para">Hashmaryne: +94 77 006 5700</div>
+                                
                             </div>
                         </div>
                     </div>
