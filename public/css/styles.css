@@ -718,7 +718,7 @@ div#form-card-contact
 .contact-txt-heading
 {
     color:rgba(0, 89, 255, 0.58);
-    display:block;
+    display:inline-block;
 }
 
 .fab 
@@ -732,7 +732,7 @@ div#form-card-contact
     border-radius: 112px;
 }
 
-  .fab:hover 
+.fab:hover 
 {
     opacity: 0.7;
 }
@@ -761,3 +761,7 @@ p#contact-email
     margin-top: -26px;
 }
 
+.contact-info
+{
+    display: inline-block;
+}

@@ -3,6 +3,7 @@
       .navbar 
       {
             background: #66a6ff!important;
+            position: fixed;
       }
     
       .navbar .navbar-brand, .navbar .nav-link 
@@ -246,6 +247,7 @@
       div#contact-left 
       {
             height: 500px;
+            
       }
 
       i.fab.fa-facebook 
@@ -268,22 +270,42 @@
       #call-us-left 
       {
             left: 3%;
+            display: inline-block!important;
+            width: 245px!important;
+      }
+
+      #call-us-right 
+      {
+            display: inline-block!important;
+            width: 245px!important;
       }
 
       #email-us-left
       {
             left: 3%;
       }
+
+      #email-us-right
+      {
+            display: inline-block!important;
+            width: 200px!important;
+      }
       
-     #icon-fb
-     {
+      #icon-fb
+      {
             left: 31%!important;
             top: 7%!important;
-     }
+      }
+
 
      #icon-insta
      {
             left: 50%;
             top: 7%;
+     }
+
+     p#socials-heading 
+     {
+            font-size: 13px!important;
      }
 } 
