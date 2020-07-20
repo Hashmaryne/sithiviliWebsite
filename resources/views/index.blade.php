@@ -287,6 +287,7 @@
                 </div>
                 <!--left sec ends-->
 
+                <!--left sec-->
                 <div class="col-md-6" id="contact-right">
                     <div class="card" id="form-card-contact">
                         <form id="contact-form" role="form" action="{{ route('contact.store') }}" method="POST">
@@ -324,13 +325,28 @@
                         </form>
                     </div>
                 </div>
-                    <!--right sec ends-->
+                <!--right sec ends-->
+
+                <!--mobile-->
+                <div class="col-md-6" id="contact-mobile" style="display:none">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="feature-icons-wrap"><img src="{{URL::asset('/images/emergency.png')}}" class="feature-icons"><p>
+                            <h5 class="feature-heading">Easy Access to Emergency Contacts</h5>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor. </p>
+                        </div>
+                    </div>
+                </div>
+                <!--mobile ends-->
+
             </div>
             <!--row ends-->
         </div>
     </section>
     <!--Contact us section ends-->
    
+
+
 </body>
 
 <script>

@@ -247,7 +247,7 @@
       div#contact-left 
       {
             height: 500px;
-            
+            display: none;
       }
 
       i.fab.fa-facebook 
@@ -308,4 +308,6 @@
      {
             font-size: 13px!important;
      }
+
+
 } 
