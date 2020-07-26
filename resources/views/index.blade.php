@@ -80,9 +80,10 @@
                     <div class="row">
                         <div class="col-md-6" id="banner-right">
                             <h3>Don't Lose<span> Hope</span>, <br><span>Believe</span> in yourself and all that you are.</h3>
-                            <button class="download-btn">
-                                Download Sithivili
-                            </button>
+                            <!-- <button class=""> -->
+                            <img class="download-btn" src="{{URL::asset('/images/googleplay.png')}}"></img>
+                                <!-- Download Sithivili -->
+                            <!-- </button> -->
 
                             
                         </div>
@@ -139,8 +140,8 @@
                 <div class="col-md-4" data-aos="fade-up">
                     <p class="feature-icons-wrap"><img src="{{URL::asset('/images/health.png')}}" class="feature-icons"><p>
                     <h5 class="feature-heading"> Find Nearby Mental Health Institutes</h5>
-                    <p> Directions for the nearest Mental Health Institute? 
-                    We will provide you the locations</p>
+                    <p> Need to know the addresses of mental health institutes? We provide you the 
+                    locations of available institutes.</p>
                 </div>
             </div>
             <!--row ends-->
@@ -188,13 +189,14 @@
                     who wants to help make lives better for those who need support to stand up on their
                     own. If you have the below qualifications and are interested in helping, please
                     drop us a message through the below form.</p> 
-                    <p>
+                    <p><strong>
                         + Experience: -> Undergraduates/Graduates in Psychology <br>
-                        <span style="padding-left: 100px;">-> Have experience in counseling or related to Psychology </span> <br>
-                        + Between the age of 21 to 30
-                    </p>
-                    <p style="margin-top: 40px;">Your Role:<br>
-                        <span style="padding-left: 80px;">Is to be a friend, a good listener to whoever that comes to chat with you.
+                        <span style="padding-left: 106px;">-> Have experience in counseling or related to Psychology </span> <br>
+                        + Age 21 and above
+                    </p></strong>
+                    <p style="margin-top: 40px;"><strong>Your Role:<br>
+                        <span style="padding-left: 80px;">Is to be a friend, a supporter, a good listener 
+                        to your friend who'll be on the other side.</strong>
                         </span>
                     </p>
                     <p>We will provide the necessary training</p>
