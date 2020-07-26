@@ -125,19 +125,22 @@
                 <div class="col-md-4" data-aos="fade-up">
                     <p class="feature-icons-wrap"><img src="{{URL::asset('/images/emergency.png')}}" class="feature-icons"><p>
                     <h5 class="feature-heading">Easy Access to Emergency Contacts</h5>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor. </p>
+                    <p> We provide you the most important emergency contact details. 
+                    Help will be just a click away! </p>
                 </div>
 
                 <div class="col-md-4" data-aos="fade-up">
                     <p class="feature-icons-wrap"><img src="{{URL::asset('/images/app.png')}}" class="feature-icons"><p>
                     <h5 class="feature-heading">Chat to Us Annonymously</h5>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor. </p>
+                    <p> Feeling down? Use our chat feature to chat with a Friend. 
+                    We promise to keep your information safe. </p>
                 </div>
 
                 <div class="col-md-4" data-aos="fade-up">
                     <p class="feature-icons-wrap"><img src="{{URL::asset('/images/health.png')}}" class="feature-icons"><p>
                     <h5 class="feature-heading"> Find Nearby Mental Health Institutes</h5>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor. </p>
+                    <p> Directions for the nearest Mental Health Institute? 
+                    We will provide you the locations</p>
                 </div>
             </div>
             <!--row ends-->
@@ -158,9 +161,7 @@
             <div class="page_content">
                 <div class="row">
                     <div class="col-md-12" >
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <p>Vel pharetra vel turpis nunc eget lorem dolor. Nunc lobortis mattis aliquam faucibus purus in. Feugiat in fermentum posuere urna nec tincidunt praesent semper feugiat. Suspendisse in est ante in nibh mauris cursus mattis molestie. Neque aliquam vestibulum morbi blandit cursus risus at ultrices mi. Posuere morbi leo urna molestie at elementum eu. Condimentum mattis pellentesque id nibh tortor. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Laoreet sit amet cursus sit amet dictum sit. Et odio pellentesque diam volutpat commodo sed egestas. Eget est lorem ipsum dolor. Est pellentesque elit ullamcorper dignissim. Purus gravida quis blandit turpis cursus in hac habitasse platea. Ornare arcu dui vivamus arcu felis bibendum ut. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Orci porta non pulvinar neque laoreet. Euismod quis viverra nibh cras pulvinar. Habitant morbi tristique senectus et netus.</p>
+                        <p></p>
                     </div>
                 </div>
             </div>
@@ -180,8 +181,23 @@
 
             <div class="row">
                 <div class="col-md-12">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Do you have the capacity to help those in need?
+                    Have a psychology background?
+                    Come join us to make this project successful!</p>   
+                    <p>We are looking for young individuals with a psychology background
+                    who wants to help make lives better for those who need support to stand up on their
+                    own. If you have the below qualifications and are interested in helping, please
+                    drop us a message through the below form.</p> 
+                    <p>
+                        + Experience: -> Undergraduates/Graduates in Psychology <br>
+                        <span style="padding-left: 100px;">-> Have experience in counseling or related to Psychology </span> <br>
+                        + Between the age of 21 to 30
+                    </p>
+                    <p style="margin-top: 40px;">Your Role:<br>
+                        <span style="padding-left: 80px;">Is to be a friend, a good listener to whoever that comes to chat with you.
+                        </span>
+                    </p>
+                    <p>We will provide the necessary training</p>
                 </div>
             </div>
             <!--End row-->
