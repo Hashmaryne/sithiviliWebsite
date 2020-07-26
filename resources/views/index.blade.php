@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="build/css/intlTelInput.css">
 
     <!--font awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -16,6 +17,7 @@
      <!--jquery-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="build/js/intlTelInput-jquery.min.js"></script>
     
     <!--bootstrap 4-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -29,8 +31,6 @@
     <!--animatons-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    
      
     <title>Sithivili | Let's Talk</title>
 </head>
@@ -113,7 +113,7 @@
             <!--row-->
             <div class="row">
                 <div class="col-md-12" id="features-imgs">
-                    <img src="{{URL::asset('/images/ec-screen.png')}}" class="emergency-screen-img" data-aos="fade-right">
+                    <img src="{{URL::asset('/images/emergency-contact.png')}}" class="emergency-screen-img" data-aos="fade-right">
                     <img src="{{URL::asset('/images/ni-screen.png')}}" class="institutes-screen-img" data-aos="fade-left">
                     <img src="{{URL::asset('/images/chatScreen.png')}}" class="chatscreen-img" data-aos="fade-up">
                 </div>
@@ -216,7 +216,10 @@
 
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="form-group"> <label for="form_name">NIC *</label> <input id="form_nic" type="text" name="nic" class="form-control" placeholder="Enter NIC *" required="required" data-error="This field is required."> </div>
+                                <div class="form-group"> <label for="form_name">NIC *</label> <input id="form_nic" type="text" name="nic" class="form-control" placeholder="Enter NIC *" required="required" data-error=" field is required."> </div>
+                                @error('nic')
+                                <span>{{$message}}</span>
+                                @enderror
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group"> <label for="form_lastname"  >Date of birth *</label> <input id="form_dob" type="date" name="dob" class="form-control" required="required" data-error="This field is required."> </div>
@@ -228,7 +231,7 @@
                                 <div class="form-group"> <label for="form_email">Email *</label> <input id="form_email" type="email" name="email" class="form-control" placeholder="Enter email *" required="required" data-error="Valid email is required."> </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="form-group"> <label for="form_email">Mobile number *</label> <input id="form_mobile"  name="mobile" class="form-control" placeholder="Enter number *" required="required" data-error="This field is required."> </div>
+                                <div class="form-group"> <label for="form_email">Mobile number *</label> <input id="form_mobile" type="tel"  name="mobile" class="form-control" placeholder="Enter number *" required="required" data-error="This field is required."> </div>
                             </div>
                         </div>
                         <div class="row">
@@ -262,37 +265,45 @@
 
     <!--Contact us section-->
     <section id="contact-us" class="section">
-        <div class="container"  data-aos="fade-up">
-            <!--contact us heading  starts-->
+        <div class="container">
+            <!--about us heading  starts-->
             <div class="row">
-                <div class="col-md-12"><h2 class="heading-sec">Have any questions? Reach out to us!</h4></div>
+                <div class="col-md-12"><h2 class="heading-sec">Contact us</h4></div>
             </div>
-            <!--contact us heading  ends--> 
-
-            <!--row-->
+            <!--about us heading  ends--> 
             <div class="row" id="contact-content">
-
                 <!--left sec-->
                 <div class="col-md-6" id="contact-left">
-                    <div class="row" id="call-us-row">
-                        <div clas="col-md-6" id="call-us-left"><i class="fas fa-phone-volume"></i></div>
-                        <div class="col-md-6" id="call-us-right"> <p class="contact-txt-heading"><b>CALL US UP ON</b></p> <p>Rusiru: +94 75 729 1350 <br>Hiruksha: +94 77 802 7599 <br>Hashmaryne: +94 77 006 5700</p></div>
+                    <div class="container">
+                        <div class="row" id="call-us-row">
+                            <div clas="col-md-6" id="call-us-left"><i class="fas fa-phone-volume"></i></div>
+                            <div class="col-md-6" id="call-us-right"> 
+                                <h6 class="contact-txt-heading"><b>CALL US UP ON</b><br></h6> 
+                                <div class="contact-info">
+                                <div class="contact-para">Rusiru: +94 75 729 1350</div>
+                                <div class="contact-para">Hiruksha: +94 77 802 7599  </div>
+                                <div class="contact-para">Hashmaryne: +94 77 006 5700</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="row" id="email-us-row">
-                        <div clas="col-md-6" id="email-us-left"><i class="fas fa-at"></i></div>
-                        <div class="col-md-6" id="email-us-right"> <p class="contact-txt-heading"><b>SEND US AN EMAIL</b></p> <p>sithivili.project@gmail.com</p></div>
+                    <div class="container">
+                        <div class="row" id="email-us-row">
+                            <div clas="col-md-6" id="email-us-left"><i class="fas fa-at"></i></div>
+                            <div class="col-md-6" id="email-us-right"> <p class="contact-txt-heading"><b>SEND US AN EMAIL</b></p> <p class="contact-para" id="contact-email"> <br>sithivili.project@gmail.com</p></div>
+                        </div>
                     </div>
 
                     <div class="row" id="socials-row">
-                        <p class="contact-txt-heading"><b>OR DROP US A MESSAGE THROUGH OUR SOCIALS </b> 
-                         <br><i class="fab fa-facebook"></i> <i class="fab fa-instagram"></i></p>
+                        <p class="contact-txt-heading" id="socials-heading"><b>OR DROP US A MESSAGE THROUGH OUR SOCIALS </b> 
+                            <br><i class="fab fa-facebook"></i> <i class="fab fa-instagram"></i></p>
                     </div>
 
                 </div>
                 <!--left sec ends-->
-                
-                <!--right sec-->
+
+                <!--left sec-->
                 <div class="col-md-6" id="contact-right">
                     <div class="card" id="form-card-contact">
                         <form id="contact-form" role="form" action="{{ route('contact.store') }}" method="POST">
@@ -328,9 +339,21 @@
                             </div>
                         
                         </form>
-                     </div>
+                    </div>
                 </div>
                 <!--right sec ends-->
+
+                <!--mobile-->
+                <div class="col-md-6" id="contact-mobile" style="display:none">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="feature-icons-wrap"><img src="{{URL::asset('/images/emergency.png')}}" class="feature-icons"><p>
+                            <h5 class="feature-heading">Easy Access to Emergency Contacts</h5>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor. </p>
+                        </div>
+                    </div>
+                </div>
+                <!--mobile ends-->
 
             </div>
             <!--row ends-->
@@ -338,6 +361,8 @@
     </section>
     <!--Contact us section ends-->
    
+
+
 </body>
 
 <script>
@@ -397,5 +422,28 @@ function aos_init() {
     });
   });
 
+    let telInput = $("#form_mobile");
+
+    // initialize
+    telInput.intlTelInput({
+        initialCountry: 'auto',
+        preferredCountries: ['us','gb','br','ru','cn','es','it'],
+        autoPlaceholder: 'aggressive',
+        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/js/utils.js",
+        geoIpLookup: function(callback) {
+            fetch('https://ipinfo.io/json', {
+                cache: 'reload'
+            }).then(response => {
+                if ( response.ok ) {
+                    return response.json()
+                }
+                throw new Error('Failed: ' + response.status)
+            }).then(ipjson => {
+                callback(ipjson.country)
+            }).catch(e => {
+                callback('us')
+            })
+        }
+    });
 </script>
 </html>

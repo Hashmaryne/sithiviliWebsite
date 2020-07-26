@@ -30,9 +30,9 @@ class JoinFormController extends Controller
             'name'=>'required',
             'surname'=>'required',
             'email'=>'required|email',
-            'mobile'=>'required',
+            'mobile'=>'required|digits:10',
             'qualifications' =>'required',
-            'nic' =>'required',
+            'nic' =>'required|min:10|max:10',
             'dob' =>'required',
             'comments' => 'min:3',
         ]);

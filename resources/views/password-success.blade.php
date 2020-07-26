@@ -26,13 +26,14 @@
             <div class="col"> 
                 <i class="fas fa-check-circle"></i>
                 <p class="ty-text"> Password successfully changed </p>
-                <p class ="more-ty"> Please login via the app using your new password. Want to know more about Sithivili? <a href="/"> Click here </a> to vist our website </p>
+                <p class ="more-ty"> Please login via the app using your new password. <!--Want to know more about Sithivili?<a href="/"> Click here </a> to vist our website -->  </p>
             </div>
         </div>
 
         <div class="row" id="footer-row">
-            <div class="col">
-                <p class="footer-icons"><i class="fab fa-facebook-f"></i>  <i class="fab fa-instagram"></i></p>
+        <div class="col">
+                <p class="footer-icons"> <a href="https://facebook.com/pages/category/Product-Service/Project-Sithivili-106793030832187/"> <i class="fab fa-facebook" id="icon-fb"></i></a>  
+                <a href="https://instagram.com/project_sithivili?igshid=ig4r84ve9r40"><i class="fab fa-instagram" id="icon-insta"></i></a></p>
                 <hr class="footer-line">
             </div>
         </div>
