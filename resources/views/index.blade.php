@@ -187,7 +187,7 @@
             <!--End row-->
 
             <div class="card" id="form-card">
-                <form id="contact-form" role="form" action="{{ route('join.store') }}" method="POST">
+                <form id="join-form" role="form" action="{{ route('join.store') }}" method="POST">
                     <div class="controls">
                         <div class="row">
                             <div class="col-md-6">
@@ -200,7 +200,8 @@
 
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="form-group"> <label for="form_name">NIC *</label> <input id="form_nic" type="text" name="nic" class="form-control" placeholder="Enter NIC *" required="required" data-error=" field is required."> </div>
+                                <div class="form-group"> <label for="form_name">NIC *</label> <input id="form_nic" type="text" name="nic" class="form-control" placeholder="Enter NIC *" required="required" data-error=" field is required." onkeyup='validateform();'> </div>
+                                <div id="nic-error"> Please enter a valid NIC number </div>
                                 @error('nic')
                                 <span>{{$message}}</span>
                                 @enderror
@@ -429,5 +430,21 @@ function aos_init() {
             })
         }
     });
+
+    function validateform(){  
+        var nic=document.getElementById('form_nic').value;  
+        
+        
+        if (nic.length !== 10)
+        {  
+            document.getElementById("nic-error").style.display = "block";
+        }
+        else
+        {
+            document.getElementById("nic-error").style.display = "none";
+        }
+    } 
+
+
 </script>
 </html>

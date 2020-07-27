@@ -765,3 +765,8 @@ p#contact-email
 {
     display: inline-block;
 }
+
+#nic-error
+{
+    display: none;
+}
