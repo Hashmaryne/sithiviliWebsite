@@ -24,7 +24,7 @@ class ResetPasswordsController extends Controller
         $password=$request->input('password');
         $username=$request->input('username');
         
-        $client = new \GuzzleHttp\Client(["base_uri" => "https://sithivili.azurewebsites.net" ]);
+        $client = new \GuzzleHttp\Client(["base_uri" => "https://13.234.35.98:8080/" ]);
             $fields = [
                 'json' => [
                     "username" => "$username",
