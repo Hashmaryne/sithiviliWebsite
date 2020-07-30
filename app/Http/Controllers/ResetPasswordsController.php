@@ -30,10 +30,10 @@ class ResetPasswordsController extends Controller
                     "username" => "$username",
                     "password" => "$password"
                 ],
-
+                'verify' => false,
                 'headers'=> ['Accept' => 'application/json']
                ];
-        $response = $client->post("/api/users/user/password/reset", $fields, ['verify' => false]);
+        $response = $client->post("/api/users/user/password/reset", $fields);
         //echo $response->getBody();
 
         if ($response->getBody()=="true")
