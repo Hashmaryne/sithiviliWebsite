@@ -208,17 +208,18 @@
                 <form id="contact-form" role="form" action="{{ route('join.store') }}" method="POST">
                     <div class="controls">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-sm-6">
                                 <div class="form-group"> <label for="form_name">First name *</label> <input id="form_name" type="text" name="name" class="form-control" placeholder="Enter first name *" required="required" data-error="This field is required."> </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-group"> <label for="form_lastname">Last name *</label> <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Enter last name *" required="required" data-error="This field is required."> </div>
+                            <div class="col-sm-6">
+                                <div class="form-group"> <label for="form_lastname">Last name *</label> <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Enter last name *" required="required" data-error="This field is required." size="2"> </div>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="form-group"> <label for="form_name">NIC *</label> <input id="form_nic" type="text" name="nic" class="form-control" placeholder="Enter NIC *" required="required" data-error=" field is required."> </div>
+                                <div class="form-group"> <label for="form_name">NIC *</label> <input id="form_nic" type="text" name="nic" class="form-control" placeholder="Enter NIC *" required="required" data-error=" field is required." size="12" onkeyup='validateform();'> </div>
+                                <span id="nic-error" style="display: none"> Please enter a valid NIC number </span>
                                 @error('nic')
                                 <span>{{$message}}</span>
                                 @enderror
@@ -345,17 +346,6 @@
                 </div>
                 <!--right sec ends-->
 
-                <!--mobile-->
-                <div class="col-md-6" id="contact-mobile" style="display:none">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="feature-icons-wrap"><img src="{{URL::asset('/images/emergency.png')}}" class="feature-icons"><p>
-                            <h5 class="feature-heading">Easy Access to Emergency Contacts</h5>
-                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor. </p>
-                        </div>
-                    </div>
-                </div>
-                <!--mobile ends-->
 
             </div>
             <!--row ends-->
@@ -424,28 +414,18 @@ function aos_init() {
     });
   });
 
-    let telInput = $("#form_mobile");
-
-    // initialize
-    telInput.intlTelInput({
-        initialCountry: 'auto',
-        preferredCountries: ['us','gb','br','ru','cn','es','it'],
-        autoPlaceholder: 'aggressive',
-        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/js/utils.js",
-        geoIpLookup: function(callback) {
-            fetch('https://ipinfo.io/json', {
-                cache: 'reload'
-            }).then(response => {
-                if ( response.ok ) {
-                    return response.json()
-                }
-                throw new Error('Failed: ' + response.status)
-            }).then(ipjson => {
-                callback(ipjson.country)
-            }).catch(e => {
-                callback('us')
-            })
-        }
-    });
+  function validateform()
+  {
+    var nic=document.getElementById('form_nic').value;
+    if (nic.length !== 12)        
+    {
+        document.getElementById("nic-error").style.display = "block";        
+    }        
+    else        
+    {            
+        document.getElementById("nic-error").style.display = "none";        
+    }    
+  } 
+    
 </script>
 </html>
