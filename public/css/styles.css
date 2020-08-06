@@ -773,5 +773,10 @@ p#contact-email
 
 #contact-mobile
 {
-       display: none;
+    display: none;
+}
+
+#mobile-only
+{
+    display: none;
 }

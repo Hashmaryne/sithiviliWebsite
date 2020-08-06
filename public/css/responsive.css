@@ -309,7 +309,30 @@
             font-size: 13px!important;
      }
 
-   
+     div#form-card
+     {
+         margin: 0px;
+         padding: 33px;
+         font-size: 14px;
+     }
 
+     .form-control
+     {
+         font-size: 13px;
+     }
 
+     #mobile-only
+     {
+         display: block;
+     }
+
+     #desktop-only
+     {
+         display: none;
+     }
+
+     img#screen-mobile-only 
+     {
+         height: 266px;
+     }
 } 

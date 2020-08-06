@@ -89,7 +89,7 @@
                         </div>
 
                         <div class="col-md-6" id="banner-left">
-                            <img src="{{URL::asset('/images/HomeScreen.png')}}" class="homescreen-img" data-aos="fade-left">
+                            <img src="{{URL::asset('/images/1.png')}}" class="homescreen-img" data-aos="fade-left">
                         </div>
                     </div>
                 </div>
@@ -109,14 +109,14 @@
     <!--Home section-->
     <section id="home" class="section">
         <!--container-->
-        <div class="container">
+        <div class="container" id="desktop-only">
 
             <!--row-->
             <div class="row">
                 <div class="col-md-12" id="features-imgs">
-                    <img src="{{URL::asset('/images/emergency-contact.png')}}" class="emergency-screen-img" data-aos="fade-right">
-                    <img src="{{URL::asset('/images/ni-screen.png')}}" class="institutes-screen-img" data-aos="fade-left">
-                    <img src="{{URL::asset('/images/chatScreen.png')}}" class="chatscreen-img" data-aos="fade-up">
+                    <img src="{{URL::asset('/images/2.png')}}" class="emergency-screen-img" data-aos="fade-right">
+                    <img src="{{URL::asset('/images/4.png')}}" class="institutes-screen-img" data-aos="fade-left">
+                    <img src="{{URL::asset('/images/3.png')}}" class="chatscreen-img" data-aos="fade-up">
                 </div>
             </div>
             <!--row ends-->
@@ -138,6 +138,39 @@
                 </div>
 
                 <div class="col-md-4" data-aos="fade-up">
+                    <p class="feature-icons-wrap"><img src="{{URL::asset('/images/health.png')}}" class="feature-icons"><p>
+                    <h5 class="feature-heading"> Find Nearby Mental Health Institutes</h5>
+                    <p> Need to know the addresses of mental health institutes? We provide you the 
+                    locations of available institutes.</p>
+                </div>
+            </div>
+            <!--row ends-->
+
+        </div>
+        <!--container ends-->
+
+        <!--container-->
+        <div class="container" id="mobile-only">
+            <!--row-->
+            <div class="row" >
+                <div class="col-md-4" data-aos="fade-up">
+                    <img src="{{URL::asset('/images/3.png')}}" id="screen-mobile-only">
+                    <p class="feature-icons-wrap"><img src="{{URL::asset('/images/app.png')}}" class="feature-icons"><p>
+                    <h5 class="feature-heading">Chat to Us Annonymously</h5>
+                    <p> Feeling down? Use our chat feature to chat with a Friend. 
+                    We promise to keep your information safe. </p>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up">
+                    <img src="{{URL::asset('/images/2.png')}}" id="screen-mobile-only" >
+                    <p class="feature-icons-wrap"><img src="{{URL::asset('/images/emergency.png')}}" class="feature-icons"><p>
+                    <h5 class="feature-heading">Easy Access to Emergency Contacts</h5>
+                    <p> We provide you the most important emergency contact details. 
+                    Help will be just a click away! </p>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up">
+                    <img src="{{URL::asset('/images/4.png')}}" id="screen-mobile-only">
                     <p class="feature-icons-wrap"><img src="{{URL::asset('/images/health.png')}}" class="feature-icons"><p>
                     <h5 class="feature-heading"> Find Nearby Mental Health Institutes</h5>
                     <p> Need to know the addresses of mental health institutes? We provide you the 
@@ -208,32 +241,32 @@
                 <form id="contact-form" role="form" action="{{ route('join.store') }}" method="POST">
                     <div class="controls">
                         <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-6">
                                 <div class="form-group"> <label for="form_name">First name *</label> <input id="form_name" type="text" name="name" class="form-control" placeholder="Enter first name *" required="required" data-error="This field is required."> </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-6">
                                 <div class="form-group"> <label for="form_lastname">Last name *</label> <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Enter last name *" required="required" data-error="This field is required." size="2"> </div>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-6">
                                 <div class="form-group"> <label for="form_name">NIC *</label> <input id="form_nic" type="text" name="nic" class="form-control" placeholder="Enter NIC *" required="required" data-error=" field is required." size="12" onkeyup='validateform();'> </div>
                                 <span id="nic-error" style="display: none"> Please enter a valid NIC number </span>
                                 @error('nic')
                                 <span>{{$message}}</span>
                                 @enderror
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-6">
                                 <div class="form-group"> <label for="form_lastname"  >Date of birth *</label> <input id="form_dob" type="date" name="dob" class="form-control" required="required" data-error="This field is required."> </div>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-6">
                                 <div class="form-group"> <label for="form_email">Email *</label> <input id="form_email" type="email" name="email" class="form-control" placeholder="Enter email *" required="required" data-error="Valid email is required."> </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-6">
                                 <div class="form-group"> <label for="form_email">Mobile number *</label> <input id="form_mobile" type="tel"  name="mobile" class="form-control" placeholder="Enter number *" required="required" data-error="This field is required."> </div>
                             </div>
                         </div>
