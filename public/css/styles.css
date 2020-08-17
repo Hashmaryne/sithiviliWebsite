@@ -770,3 +770,13 @@ p#contact-email
 {
     display: none;
 }
+
+.footer-mb
+{
+    display:none;
+}
+
+#contact-footer
+{
+    display:none;
+}

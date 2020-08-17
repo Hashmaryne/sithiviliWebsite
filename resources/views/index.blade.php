@@ -89,7 +89,7 @@
                         </div>
 
                         <div class="col-md-6" id="banner-left">
-                            <img src="{{URL::asset('/images/HomeScreen.png')}}" class="homescreen-img" data-aos="fade-left">
+                            <img src="{{URL::asset('/images/1.png')}}" class="homescreen-img">
                         </div>
                     </div>
                 </div>
@@ -109,35 +109,35 @@
     <!--Home section-->
     <section id="home" class="section">
         <!--container-->
-        <div class="container">
+        <div class="container" id="desktop-only">
 
             <!--row-->
             <div class="row">
                 <div class="col-md-12" id="features-imgs">
-                    <img src="{{URL::asset('/images/emergency-contact.png')}}" class="emergency-screen-img" data-aos="fade-right">
-                    <img src="{{URL::asset('/images/ni-screen.png')}}" class="institutes-screen-img" data-aos="fade-left">
-                    <img src="{{URL::asset('/images/chatScreen.png')}}" class="chatscreen-img" data-aos="fade-up">
+                    <img src="{{URL::asset('/images/2.png')}}" class="emergency-screen-img" >
+                    <img src="{{URL::asset('/images/4.png')}}" class="institutes-screen-img" >
+                    <img src="{{URL::asset('/images/3.png')}}" class="chatscreen-img" >
                 </div>
             </div>
             <!--row ends-->
 
             <!--row-->
             <div class="row" >
-                <div class="col-md-4" data-aos="fade-up">
+                <div class="col-md-4" >
                     <p class="feature-icons-wrap"><img src="{{URL::asset('/images/emergency.png')}}" class="feature-icons"><p>
                     <h5 class="feature-heading">Easy Access to Emergency Contacts</h5>
                     <p> We provide you the most important emergency contact details. 
                     Help will be just a click away! </p>
                 </div>
 
-                <div class="col-md-4" data-aos="fade-up">
+                <div class="col-md-4" >
                     <p class="feature-icons-wrap"><img src="{{URL::asset('/images/app.png')}}" class="feature-icons"><p>
                     <h5 class="feature-heading">Chat to Us Annonymously</h5>
                     <p> Feeling down? Use our chat feature to chat with a Friend. 
                     We promise to keep your information safe. </p>
                 </div>
 
-                <div class="col-md-4" data-aos="fade-up">
+                <div class="col-md-4" >
                     <p class="feature-icons-wrap"><img src="{{URL::asset('/images/health.png')}}" class="feature-icons"><p>
                     <h5 class="feature-heading"> Find Nearby Mental Health Institutes</h5>
                     <p> Need to know the addresses of mental health institutes? We provide you the 
@@ -148,12 +148,14 @@
 
         </div>
         <!--container ends-->
+
+      
     </section>
     <!--Home section ends-->
 
     <!--About us section-->
     <section id="about-us" class="section" >
-        <div class="container"  data-aos="fade-up" >
+        <div class="container"  >
             <!--about us heading  starts-->
             <div class="row">
                 <div class="col-md-12"><h2 class="heading-sec">Who we are</h4></div>
@@ -173,7 +175,7 @@
 
     <!--Join us section-->
     <section id="join-us" class="section" >
-        <div class="container"  data-aos="fade-up" >
+        <div class="container" >
             <!--about us heading  starts-->
             <div class="row">
                 <div class="col-md-12"><h2 class="heading-sec">Volunteer Opportunities</h4></div>
@@ -208,32 +210,32 @@
                 <form id="join-form" role="form" action="{{ route('join.store') }}" method="POST">
                     <div class="controls">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-6">
                                 <div class="form-group"> <label for="form_name">First name *</label> <input id="form_name" type="text" name="name" class="form-control" placeholder="Enter first name *" required="required" data-error="This field is required."> </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-group"> <label for="form_lastname">Last name *</label> <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Enter last name *" required="required" data-error="This field is required."> </div>
+                            <div class="col-6">
+                                <div class="form-group"> <label for="form_lastname">Last name *</label> <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Enter last name *" required="required" data-error="This field is required." size="2"> </div>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group"> <label for="form_name">NIC *</label> <input id="form_nic" type="text" name="nic" class="form-control" placeholder="Enter NIC *" required="required" data-error=" field is required." onkeyup='validateform();'> </div>
-                                <div id="nic-error"> Please enter a valid NIC number </div>
+                            <div class="col-6">
+                                <div class="form-group"> <label for="form_name">NIC *</label> <input id="form_nic" type="text" name="nic" class="form-control" placeholder="Enter NIC *" required="required" data-error=" field is required." size="12" onkeyup='validateform();'> </div>
+                                <span id="nic-error" style="display: none"> Please enter a valid NIC number </span>
                                 @error('nic')
                                 <span>{{$message}}</span>
                                 @enderror
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-6">
                                 <div class="form-group"> <label for="form_lastname"  >Date of birth *</label> <input id="form_dob" type="date" name="dob" class="form-control" required="required" data-error="This field is required."> </div>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-6">
                                 <div class="form-group"> <label for="form_email">Email *</label> <input id="form_email" type="email" name="email" class="form-control" placeholder="Enter email *" required="required" data-error="Valid email is required."> </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-6">
                                 <div class="form-group"> <label for="form_email">Mobile number *</label> <input id="form_mobile" type="tel"  name="mobile" class="form-control" placeholder="Enter number *" required="required" data-error="This field is required."> </div>
                             </div>
                         </div>
@@ -274,6 +276,7 @@
                 <div class="col-md-12"><h2 class="heading-sec">Contact us</h4></div>
             </div>
             <!--about us heading  ends--> 
+
             <div class="row" id="contact-content">
                 <!--left sec-->
                 <div class="col-md-6" id="contact-left">
@@ -345,25 +348,33 @@
                     </div>
                 </div>
                 <!--right sec ends-->
-
-                <!--mobile-->
-                <div class="col-md-6" id="contact-mobile" style="display:none">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="feature-icons-wrap"><img src="{{URL::asset('/images/emergency.png')}}" class="feature-icons"><p>
-                            <h5 class="feature-heading">Easy Access to Emergency Contacts</h5>
-                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor. </p>
-                        </div>
-                    </div>
-                </div>
-                <!--mobile ends-->
-
             </div>
             <!--row ends-->
+
+
         </div>
     </section>
     <!--Contact us section ends-->
-   
+    <div class="container"  id="contact-footer">
+        <div class="row">
+            <div class="col">
+                <p class="mobile-call-now"><i class="fas fa-phone-volume"></i><p>
+                <div class="contact-info">
+                    <div class="contact-para">Rusiru: +94 75 729 1350</div>
+                    <div class="contact-para">Hiruksha: +94 77 802 7599  </div>
+                    <div class="contact-para">Hashmaryne: +94 77 006 5700</div>
+                </div>
+
+                <p class="mobile-email"><i class="fas fa-at"></i><p>
+                <div class="email-para">sithivili.project@gmail.com</div>
+                <div class="footer-mb">
+                    <p class="footer-icons"> <a href="https://facebook.com/pages/category/Product-Service/Project-Sithivili-106793030832187/"> <i class="fab fa-facebook" id="icon-fb"></i></a>  
+                    <a href="https://instagram.com/project_sithivili?igshid=ig4r84ve9r40"><i class="fab fa-instagram" id="icon-insta"></i></a></p>
+                    <hr class="footer-line">
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 </body>

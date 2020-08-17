@@ -224,7 +224,7 @@
       {
       
             height: 282px;
-            left: -6px;
+            left: 2px;
             top: 182px;
       }
 
@@ -240,7 +240,7 @@
       {
       
             height: 282px;
-            left: 61%;
+            left: 218px;
             top: 182px;
       }
 
@@ -309,5 +309,65 @@
             font-size: 13px!important;
      }
 
+     div#form-card
+     {
+            margin: 0px;
+            padding: 33px;
+            font-size: 14px;
+     }
 
+     .form-control
+     {
+            font-size: 13px;
+     }
+
+     img#screen-mobile-only 
+     {
+            height: 266px;
+     }
+
+     .mobile-call-now
+     {
+            text-align: center;
+            font-size: 35px;
+            color: #80808096;
+     }
+
+     .contact-info 
+     {
+            margin-left: 71px;
+     }
+
+     .mobile-email
+     {
+            text-align: center;
+            font-size: 35px;
+            color: #80808096;
+     }
+
+     .email-para
+     {
+            margin-left: 71px;
+            margin-bottom: 15px;
+     }
+
+     i.fas.fa-at
+     {
+            padding-top: 26px;
+     }
+
+     p.mobile-email
+     {
+            margin-bottom: -9px;
+     }
+
+     .footer-mb
+     {
+            display:block;
+     }
+
+     #contact-footer
+     {
+            display:block;
+     }
 } 

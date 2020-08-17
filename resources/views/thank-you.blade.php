@@ -26,7 +26,7 @@
             <div class="col"> 
                 <i class="fas fa-check-circle"></i>
                 <p class="ty-text"> Thank you for registering with Sithivili! </p>
-                <p class ="more-ty"> Your email has been varified. Please login via the app. <!--Want to know more about Sithivili?<a href="/"> Click here </a> to vist our website -->  </p>
+                <p class ="more-ty"> Your email has been verified. Please login via the app. <!--Want to know more about Sithivili?<a href="/"> Click here </a> to vist our website -->  </p>
             </div>
         </div>
 
