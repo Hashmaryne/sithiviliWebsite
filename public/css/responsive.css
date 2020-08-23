@@ -370,4 +370,14 @@
      {
             display:block;
      }
+
+     #desktop-only
+     {
+            display:none;
+     }
+
+     #mobile-only
+     {
+            display:block;
+     }
 } 

@@ -81,7 +81,7 @@
                         <div class="col-md-6" id="banner-right">
                             <h3>Don't Lose<span> Hope</span>, <br><span>Believe</span> in yourself and all that you are.</h3>
                             <!-- <button class=""> -->
-                            <img class="download-btn" src="{{URL::asset('/images/googleplay.png')}}"></img>
+                            <a href="https://play.google.com/store/apps/details?id=com.skepseis.sithivili" target="_blank"><img class="download-btn" src="{{URL::asset('/images/googleplay.png')}}"></img></a>
                                 <!-- Download Sithivili -->
                             <!-- </button> -->
 
@@ -89,7 +89,7 @@
                         </div>
 
                         <div class="col-md-6" id="banner-left">
-                            <img src="{{URL::asset('/images/1.png')}}" class="homescreen-img">
+                            <img src="{{URL::asset('/images/1.png')}}" class="homescreen-img" data-aos="fade-left">
                         </div>
                     </div>
                 </div>
@@ -105,7 +105,6 @@
     </header>
     <!--Header ends-->
 
-
     <!--Home section-->
     <section id="home" class="section">
         <!--container-->
@@ -114,30 +113,72 @@
             <!--row-->
             <div class="row">
                 <div class="col-md-12" id="features-imgs">
-                    <img src="{{URL::asset('/images/2.png')}}" class="emergency-screen-img" >
-                    <img src="{{URL::asset('/images/4.png')}}" class="institutes-screen-img" >
-                    <img src="{{URL::asset('/images/3.png')}}" class="chatscreen-img" >
+                    <img src="{{URL::asset('/images/2.png')}}" class="emergency-screen-img" data-aos="fade-right">
+                    <img src="{{URL::asset('/images/4.png')}}" class="institutes-screen-img" data-aos="fade-left" >
+                    <img src="{{URL::asset('/images/3.png')}}" class="chatscreen-img" data-aos="fade-up">
                 </div>
             </div>
             <!--row ends-->
 
             <!--row-->
             <div class="row" >
-                <div class="col-md-4" >
+                <div class="col-md-4" data-aos="fade-up">
                     <p class="feature-icons-wrap"><img src="{{URL::asset('/images/emergency.png')}}" class="feature-icons"><p>
                     <h5 class="feature-heading">Easy Access to Emergency Contacts</h5>
                     <p> We provide you the most important emergency contact details. 
                     Help will be just a click away! </p>
                 </div>
 
-                <div class="col-md-4" >
+                <div class="col-md-4" data-aos="fade-up">
                     <p class="feature-icons-wrap"><img src="{{URL::asset('/images/app.png')}}" class="feature-icons"><p>
                     <h5 class="feature-heading">Chat to Us Annonymously</h5>
                     <p> Feeling down? Use our chat feature to chat with a Friend. 
                     We promise to keep your information safe. </p>
                 </div>
 
-                <div class="col-md-4" >
+                <div class="col-md-4" data-aos="fade-up">
+                    <p class="feature-icons-wrap"><img src="{{URL::asset('/images/health.png')}}" class="feature-icons"><p>
+                    <h5 class="feature-heading"> Find Nearby Mental Health Institutes</h5>
+                    <p> Need to know the addresses of mental health institutes? We provide you the 
+                    locations of available institutes.</p>
+                </div>
+            </div>
+            <!--row ends-->
+
+        </div>
+        <!--container ends-->
+
+
+        <!--container-->
+        <div class="container" id="mobile-only">
+
+            <!--row-->
+            <div class="row">
+                <div class="col-md-12" id="features-imgs">
+                    <img src="{{URL::asset('/images/2.png')}}" class="emergency-screen-img" data-aos="zoom-in-left">
+                    <img src="{{URL::asset('/images/4.png')}}" class="institutes-screen-img" data-aos="zoom-in-right" >
+                    <img src="{{URL::asset('/images/3.png')}}" class="chatscreen-img" data-aos="zoom-in">
+                </div>
+            </div>
+            <!--row ends-->
+
+            <!--row-->
+            <div class="row" >
+                <div class="col-md-4" data-aos="fade-up">
+                    <p class="feature-icons-wrap"><img src="{{URL::asset('/images/emergency.png')}}" class="feature-icons"><p>
+                    <h5 class="feature-heading">Easy Access to Emergency Contacts</h5>
+                    <p> We provide you the most important emergency contact details. 
+                    Help will be just a click away! </p>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up">
+                    <p class="feature-icons-wrap"><img src="{{URL::asset('/images/app.png')}}" class="feature-icons"><p>
+                    <h5 class="feature-heading">Chat to Us Annonymously</h5>
+                    <p> Feeling down? Use our chat feature to chat with a Friend. 
+                    We promise to keep your information safe. </p>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up">
                     <p class="feature-icons-wrap"><img src="{{URL::asset('/images/health.png')}}" class="feature-icons"><p>
                     <h5 class="feature-heading"> Find Nearby Mental Health Institutes</h5>
                     <p> Need to know the addresses of mental health institutes? We provide you the 
@@ -154,7 +195,7 @@
     <!--Home section ends-->
 
     <!--About us section-->
-    <section id="about-us" class="section" >
+    <section id="about-us" class="section" data-aos="fade-up">
         <div class="container"  >
             <!--about us heading  starts-->
             <div class="row">
@@ -174,7 +215,7 @@
     <!--About us section ends-->
 
     <!--Join us section-->
-    <section id="join-us" class="section" >
+    <section id="join-us" class="section" data-aos="fade-up" >
         <div class="container" >
             <!--about us heading  starts-->
             <div class="row">
@@ -186,26 +227,81 @@
                 <div class="col-md-12">
                     <p>Do you have the capacity to help those in need?
                     Have a psychology background?
-                    Come join us to make this project successful!</p>   
+                    Come join us to make this project a success!</p>   
                     <p>We are looking for young individuals with a psychology background
-                    who wants to help make lives better for those who need support to stand up on their
-                    own. If you have the below qualifications and are interested in helping, please
-                    drop us a message through the below form.</p> 
-                    <p><strong>
-                        + Experience: -> Undergraduates/Graduates in Psychology <br>
-                        <span style="padding-left: 106px;">-> Have experience in counseling or related to Psychology </span> <br>
-                        + Age 21 and above
-                    </p></strong>
-                    <p style="margin-top: 40px;"><strong>Your Role:<br>
-                        <span style="padding-left: 80px;">Is to be a friend, a supporter, a good listener 
-                        to your friend who'll be on the other side.</strong>
-                        </span>
-                    </p>
-                    <p>We will provide the necessary training</p>
+                    who wants to help make lives better for those who need emotional support to stand up on their
+                    own. </p> 
+
+                    <!--Accordion wrapper-->
+                    <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+
+                        <!-- Accordion card -->
+                        <div class="card">
+
+                            <!-- Card header -->
+                            <div class="card-header blue lighten-3 z-depth-1" role="tab" id="headingOne1">
+                                <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
+                                aria-controls="collapseOne1">
+                                <h5 class="mb-0">
+                                    Requirements <i class="fas fa-angle-down rotate-icon"></i>
+                                </h5>
+                                </a>
+                            </div>
+
+                            <!-- Card body -->
+                            <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+                                data-parent="#accordionEx">
+                                <div class="card-body">
+                                    <p><li>Currently following or have completed a degree in Psychology or any similiar certification </li> </p>
+                                    <p class="or">OR</p>
+                                    <p><li>Have experience in counseling or anything related to Psychology </li></p>
+                                    <p><li>Should be of age 21 or older</li></p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Accordion card -->
+
+                        <!-- Accordion card -->
+                        <div class="card">
+
+                            <!-- Card header -->
+                            <div class="card-header blue lighten-3 z-depth-1" role="tab" id="headingTwo2">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
+                                aria-expanded="false" aria-controls="collapseTwo2">
+                                <h5 class="mb-0">
+                                    Your Role <i class="fas fa-angle-down rotate-icon"></i>
+                                </h5>
+                                </a>
+                            </div>
+
+                            <!-- Card body -->
+                            <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
+                                data-parent="#accordionEx">
+                                <div class="card-body">
+                                <p>Your role is to be a companion and a good listener 
+                                   to the person on the other side by providing them emotional support through their troubles in order to improve 
+                                   their mental wellbeing and help them feel less alone.</p>
+
+                                <p>We will be providing the necessary training needed for this role. </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Accordion card -->
+
+                    </div>
+                    <!-- Accordion wrapper -->
+                    <p style="padding-top:50px">If you have the above mentioned requirements and are interested in helping, please
+                    fill in the the below form.</p>
                 </div>
             </div>
             <!--End row-->
-
+            @if(session()->has('message'))
+                <div class="alert alert-success">
+                    {{ session()->get('message') }}
+                </div>
+            @endif
             <div class="card" id="form-card">
                 <form id="join-form" role="form" action="{{ route('join.store') }}" method="POST">
                     <div class="controls">
@@ -220,11 +316,8 @@
 
                         <div class="row">
                             <div class="col-6">
-                                <div class="form-group"> <label for="form_name">NIC *</label> <input id="form_nic" type="text" name="nic" class="form-control" placeholder="Enter NIC *" required="required" data-error=" field is required." size="12" onkeyup='validateform();'> </div>
+                                <div class="form-group"> <label for="form_name">NIC *</label> <input id="form_nic" type="text" name="nic" class="form-control" placeholder="Enter NIC *" required="required" data-error=" field is required." size="12" maxlength="12" onkeyup='validateform();'> </div>
                                 <span id="nic-error" style="display: none"> Please enter a valid NIC number </span>
-                                @error('nic')
-                                <span>{{$message}}</span>
-                                @enderror
                             </div>
                             <div class="col-6">
                                 <div class="form-group"> <label for="form_lastname"  >Date of birth *</label> <input id="form_dob" type="date" name="dob" class="form-control" required="required" data-error="This field is required."> </div>
@@ -269,7 +362,7 @@
     <!--Join us section ends-->
 
     <!--Contact us section-->
-    <section id="contact-us" class="section">
+    <section id="contact-us" class="section" data-aos="fade-up">
         <div class="container">
             <!--about us heading  starts-->
             <div class="row">
@@ -303,7 +396,7 @@
 
                     <div class="row" id="socials-row">
                         <p class="contact-txt-heading" id="socials-heading"><b>OR DROP US A MESSAGE THROUGH OUR SOCIALS </b> 
-                            <br><i class="fab fa-facebook"></i> <i class="fab fa-instagram"></i></p>
+                            <br><a href="https://www.facebook.com/Project-Sithivili-106793030832187/" target="_blank"><i class="fab fa-facebook"></i></a> <a href="https://www.instagram.com/project_sithivili/" target="_blank"><i class="fab fa-instagram"></i></a></p>
                     </div>
 
                 </div>
@@ -312,6 +405,7 @@
                 <!--left sec-->
                 <div class="col-md-6" id="contact-right">
                     <div class="card" id="form-card-contact">
+                        <div class="form-header">Send Us a Message</div>
                         <form id="contact-form" role="form" action="{{ route('contact.store') }}" method="POST">
                             <div class="controls">
                                 <div class="row">
@@ -464,13 +558,13 @@ function aos_init() {
         var nic=document.getElementById('form_nic').value;  
         
         
-        if (nic.length !== 10)
+        if (nic.length !== 12)
         {  
-            document.getElementById("nic-error").style.display = "block";
+            document.getElementById("#nic-error").style.display = "block";
         }
         else
         {
-            document.getElementById("nic-error").style.display = "none";
+            document.getElementById("#nic-error").style.display = "none";
         }
     } 
 

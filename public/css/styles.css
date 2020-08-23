@@ -483,6 +483,7 @@ p.footer-icons {
     position: absolute;
     left: 43%!important;
     top: 2%!important;
+    cursor: pointer;
 }
 
 
@@ -491,6 +492,7 @@ p.footer-icons {
     position: absolute;
     left: 50%!important;
     top: 2%!important;
+    cursor: pointer;
 }
 
 hr.footer-line 
@@ -588,13 +590,14 @@ label
     position: absolute;
     font-size: 35px;
     left: 18%;
+    top: 52px;
 }
 
 #socials-row
 {
     text-align: center;
     position: relative;
-    top: 32%;
+    top: 25%;
     left: 10%;
 }
 .fab.fa-instagram-square
@@ -719,6 +722,7 @@ div#form-card-contact
 {
     color:rgba(0, 89, 255, 0.58);
     display:inline-block;
+    padding-top: 40px;
 }
 
 .fab 
@@ -779,4 +783,23 @@ p#contact-email
 #contact-footer
 {
     display:none;
+}
+
+#mobile-only
+{
+    display:none;
+}
+
+.or
+{
+    margin-left: 13%;
+}
+
+.form-header 
+{
+    padding-bottom: 5%;
+    text-align: center;
+    color: rgb(0 89 255 / 64%);
+    font-size: 22px;
+    font-weight: bold;
 }
