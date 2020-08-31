@@ -9,7 +9,7 @@
     <meta name="author" content="John Doe">
     <meta name="google-site-verification" content="THtT0TdZWs41qjPpD8QU8okbkE_JJLf5XuMRye8ebuM" />
     @include('meta::manager', [
-    'title'         => 'Project Sithivili',
+    'title'         => 'Sithivili | Let's Talk',
     'description'   => 'Project Sithivili is an Annoymous Emotional support application to improve the mental health of Sri Lankans',
 ])
     <!-- CSS stylesheet-->
@@ -207,11 +207,16 @@
             <!--about us heading  starts-->
             <div class="row">
                 <div class="col-md-12"><h1 class="heading-sec">Who we are</h1></div>
-                <p>We at Skepseis Private Limited provide you with 
-                <strong>"Sithivili"</strong> as a service to address social stigma 
-                surrounding Mental Health of youth in Sri Lanka. 
-                We provide you with a chance to open upto a person who's willing to
-                listen to your problems, issues and will guarantee your privacy.<p>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>We at Skepseis Private Limited provide you with 
+                        <strong>"Sithivili"</strong> as a service to address social stigma 
+                        surrounding Mental Health of youth in Sri Lanka. Project Sithivili is an Annoymous Emotional support application to improve the mental health of Sri Lankans.
+                        We provide you with a chance to open upto a person who's willing to
+                        listen to your problems, issues and will guarantee your privacy.<p>
+                    </div>
+                </div>
             </div>
             <!--about us heading  ends--> 
             <div class="page_content">
