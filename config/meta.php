@@ -70,7 +70,7 @@ return [
     | help search engines understand it better. 
     |
     */
-	'description' => 'Project Sithivi is an Annoymous Emotional support application to improve the mental health of Sri Lankans',
+	'description' => 'Project Sithivili is an Annoymous Emotional support application to improve the mental health of Sri Lankans',
 
 	/*
     |--------------------------------------------------------------------------
