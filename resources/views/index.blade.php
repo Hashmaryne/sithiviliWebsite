@@ -200,6 +200,11 @@
             <!--about us heading  starts-->
             <div class="row">
                 <div class="col-md-12"><h2 class="heading-sec">Who we are</h4></div>
+                <p>We at Skepseis Private Limited provide you with 
+                <strong>"Sithivili"</strong> as a service to address social stigma 
+                surrounding Mental Health of youth in Sri Lanka. 
+                We provide you with a chance to open upto a person who's willing to
+                listen to your problems, issues and will guarantee your privacy.<p>
             </div>
             <!--about us heading  ends--> 
             <div class="page_content">
