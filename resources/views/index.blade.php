@@ -7,7 +7,7 @@
     <meta name="description" content="Free Web tutorials">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="John Doe">
-    <meta name="google-site-verification" content="TgksqZvkYGb0lw3l2RHdCmbI5KXb4pBEPEQ_Htdnbdc">
+    <meta name="google-site-verification" content="THtT0TdZWs41qjPpD8QU8okbkE_JJLf5XuMRye8ebuM" />
     @include('meta::manager', [
     'title'         => 'Project Sithivili',
     'description'   => 'Project Sithivili is an Annoymous Emotional support application to improve the mental health of Sri Lankans',
