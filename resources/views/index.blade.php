@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    @include('meta::manager')
     <!-- CSS stylesheet-->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -199,7 +199,7 @@
         <div class="container"  >
             <!--about us heading  starts-->
             <div class="row">
-                <div class="col-md-12"><h2 class="heading-sec">Who we are</h4></div>
+                <div class="col-md-12"><h1 class="heading-sec">Who we are</h1></div>
                 <p>We at Skepseis Private Limited provide you with 
                 <strong>"Sithivili"</strong> as a service to address social stigma 
                 surrounding Mental Health of youth in Sri Lanka. 
@@ -224,7 +224,7 @@
         <div class="container" >
             <!--about us heading  starts-->
             <div class="row">
-                <div class="col-md-12"><h2 class="heading-sec">Volunteer Opportunities</h4></div>
+                <div class="col-md-12"><h1 class="heading-sec">Volunteer Opportunities</h1></div>
             </div>
             <!--about us heading  ends--> 
 
@@ -280,7 +280,7 @@
                                 </a>
                             </div>
 
-                            <!-- Card body -->
+                            <!-- Card body -->  
                             <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
                                 data-parent="#accordionEx">
                                 <div class="card-body">
@@ -371,7 +371,7 @@
         <div class="container">
             <!--about us heading  starts-->
             <div class="row">
-                <div class="col-md-12"><h2 class="heading-sec">Contact us</h4></div>
+                <div class="col-md-12"><h1 class="heading-sec">Contact us</h1></div>
             </div>
             <!--about us heading  ends--> 
 
