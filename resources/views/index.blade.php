@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Free Web tutorials">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="Project Sithivili is an Annoymous Emotional support application to improve the mental health of Sri Lankans">
+    <meta name="keywords" content="mental health, sri lanka">
     <meta name="author" content="John Doe">
     <meta name="google-site-verification" content="THtT0TdZWs41qjPpD8QU8okbkE_JJLf5XuMRye8ebuM" />
     @include('meta::manager', [
