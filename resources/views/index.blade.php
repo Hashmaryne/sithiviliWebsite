@@ -8,10 +8,7 @@
     <meta name="keywords" content="mental health, sri lanka">
     <meta name="author" content="John Doe">
     <meta name="google-site-verification" content="THtT0TdZWs41qjPpD8QU8okbkE_JJLf5XuMRye8ebuM" />
-    @include('meta::manager', [
-    'title'         => 'Sithivili | Let's Talk',
-    'description'   => 'Project Sithivili is an Annoymous Emotional support application to improve the mental health of Sri Lankans',
-])
+
     <!-- CSS stylesheet-->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
