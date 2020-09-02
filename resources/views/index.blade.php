@@ -431,6 +431,11 @@
                 <!--left sec ends-->
 
                 <!--left sec-->
+                @if(session()->has('message'))
+                <div class="alert alert-success">
+                    {{ session()->get('message') }}
+                </div>
+                @endif
                 <div class="col-md-6" id="contact-right">
                     <div class="card" id="form-card-contact">
                         <div class="form-header">Send Us a Message</div>

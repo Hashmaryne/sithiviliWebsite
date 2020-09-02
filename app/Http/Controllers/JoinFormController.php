@@ -39,6 +39,6 @@ class JoinFormController extends Controller
 
         Mail::to('sithivili.project@gmail.com')->send(new JoinFormMail($data));
         return redirect('#join-us')
-        ->with('message', 'Thanks for your message. We\'ll be in touch.');
+        ->with('message', 'Thanks for showing interest in volunteering with us! We\'ll be in touch.');
     }
 }
