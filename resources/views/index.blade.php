@@ -205,32 +205,34 @@
             <div class="row">
                 <div class="col-md-12"><h1 class="heading-sec">Who we are</h1></div>
 
-                <div class="row">
-                    <div class="col-md-12">
-                        <h6>How we started</h6>
-                        <p>The idea for Sithivili came to us back in 2018, as a group of like-minded and passionate 
-                        undergraduates who saw a burning issue faced by our fellow Sri Lankan youth and wanted to help solve it.
-                        With this idea we took part in HackaDev 2018: a social innovation challenge where we were selected 
-                        as the best solution under the "Mental health of the Youth" category. 
-                        This project is therefore approved and supported by the WHO and UNDP.</p>
-                        
-                        <h6>The Problem</h6> 
-                        <p>The social stigma surrounding mental health has greatly affected our youth. This has caused
-                        youth to feel embarrassed to reach out for help when they are facing mental health problems.
-                        Often times, they are even unaware of the resources that are available in order to improve 
-                        their mental wellbeing, resulting in many youth not knowing how to deal with their mental health problems.</p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h6>How we started</h6>
+                            <p>The idea for Sithivili came to us back in 2018, as a group of like-minded and passionate 
+                            undergraduates who saw a burning issue faced by our fellow Sri Lankan youth and wanted to help solve it.
+                            With this idea we took part in HackaDev 2018: a social innovation challenge where we were selected 
+                            as the best solution under the "Mental health of the Youth" category. 
+                            This project is therefore approved and supported by the WHO and UNDP.</p>
+                            
+                            <h6>The Problem</h6> 
+                            <p>The social stigma surrounding mental health has greatly affected our youth. This has caused
+                            youth to feel embarrassed to reach out for help when they are facing mental health problems.
+                            Often times, they are even unaware of the resources that are available in order to improve 
+                            their mental wellbeing, resulting in many youth not knowing how to deal with their mental health problems.</p>
 
-                        <h6>Our Solution</h6>
-                        
-                        <p>Our solution for this problem is <strong>Sithivili</strong>; an anonymous emotional support mobile application. 
-                        Through Sithivili,  we hope to provide you with a chance to open up to a person who's willing to listen 
-                        to your problems without any judgment, all the while being completely anonymous.
-                        We also provide many important information about mental health services on the app.
-                        We hope that through this app we can help improve the mental health in Sri Lanka by 
-                        tackling the stigma surrounding mental health and creating awareness around it. 
-                        Your mental health should be your priority and it's never too late to reach out for help!</p>
+                            <h6>Our Solution</h6>
+                            
+                            <p>Our solution for this problem is <strong>Sithivili</strong>; an anonymous emotional support mobile application. 
+                            Through Sithivili,  we hope to provide you with a chance to open up to a person who's willing to listen 
+                            to your problems without any judgment, all the while being completely anonymous.
+                            We also provide many important information about mental health services on the app.
+                            We hope that through this app we can help improve the mental health in Sri Lanka by 
+                            tackling the stigma surrounding mental health and creating awareness around it. 
+                            Your mental health should be your priority and it's never too late to reach out for help!</p>
 
-                        <p><i>*This app is a free service provided by Skepseis Private Limited, a software development startup.</i></p>
+                            <p><i>*This app is a free service provided by Skepseis Private Limited, a software development startup.</i></p>
+                    </div>
                 </div>
             </div>
             <!--about us heading  ends--> 
