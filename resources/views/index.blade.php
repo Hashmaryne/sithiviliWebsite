@@ -93,7 +93,7 @@
                         </div>
 
                         <div class="col-md-6" id="banner-left">
-                            <img src="{{URL::asset('/images/1.png')}}" class="homescreen-img" data-aos="fade-left">
+                            <img src="{{URL::asset('/images/1.png')}}" class="homescreen-img" data-aos="fade-up">
                         </div>
                     </div>
                 </div>
