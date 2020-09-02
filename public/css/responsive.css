@@ -380,6 +380,10 @@
      {
             display:block;
      }
+
+     div#features-imgs {
+      margin-top: 160px;
+  }
 } 
 
 /* Portrait and Landscape */
