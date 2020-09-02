@@ -205,10 +205,12 @@
             <div class="row">
                 <div class="col-md-12"><h1 class="heading-sec">Who we are</h1></div>
 
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h6>How we started</h6>
+            </div>
+            <!--about us heading  ends--> 
+            <div class="page_content">
+                <div class="row">
+                    <div class="col-md-12" >
+                    <h6>How we started</h6>
                             <p>The idea for Sithivili came to us back in 2018, as a group of like-minded and passionate 
                             undergraduates who saw a burning issue faced by our fellow Sri Lankan youth and wanted to help solve it.
                             With this idea we took part in HackaDev 2018: a social innovation challenge where we were selected 
@@ -232,14 +234,6 @@
                             Your mental health should be your priority and it's never too late to reach out for help!</p>
 
                             <p><i>*This app is a free service provided by Skepseis Private Limited, a software development startup.</i></p>
-                    </div>
-                </div>
-            </div>
-            <!--about us heading  ends--> 
-            <div class="page_content">
-                <div class="row">
-                    <div class="col-md-12" >
-                        <p></p>
                     </div>
                 </div>
             </div>
