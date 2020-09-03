@@ -803,3 +803,8 @@ p#contact-email
     font-size: 22px;
     font-weight: bold;
 }
+
+h6 {
+    color: #007bff;
+    font-size: 18px;
+}
