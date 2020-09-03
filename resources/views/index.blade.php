@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="an anonymous emotional support mobile application. 
+    <meta name="description" content="Sithivili an anonymous emotional support mobile application. 
                             Through Sithivili,  we hope to provide you with a chance to open up to a person who is willing to listen 
                             to your problems without any judgment, all the while being completely anonymous.">
     <meta name="keywords" content="mental health, sri lanka">
