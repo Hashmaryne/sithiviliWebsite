@@ -212,20 +212,20 @@
             <div class="page_content">
                 <div class="row">
                     <div class="col-md-12" >
-                            <h6>How we started</h6>
+                            <h6 class="au-heading">How we started</h6>
                             <p data-aos="fade-up">The idea for Sithivili came to us back in 2018, as a group of like-minded and passionate 
                             undergraduates who saw a burning issue faced by our fellow Sri Lankan youth and wanted to help solve it.
                             With this idea we took part in HackaDev 2018: a social innovation challenge where we were selected 
                             as the best solution under the "Mental health of the Youth" category. 
                             This project is therefore approved and supported by the WHO and UNDP.</p>
                             
-                            <h6>The Problem</h6> 
+                            <h6 class="au-heading">The Problem</h6> 
                             <p data-aos="fade-up">The social stigma surrounding mental health has greatly affected our youth. This has caused
                             youth to feel embarrassed to reach out for help when they are facing mental health problems.
                             Often times, they are even unaware of the resources that are available in order to improve 
                             their mental wellbeing, resulting in many youth not knowing how to deal with their mental health problems.</p>
 
-                            <h6 >Our Solution</h6>
+                            <h6 class="au-heading">Our Solution</h6> 
                             
                             <p data-aos="fade-up">Our solution for this problem is <strong>Sithivili</strong>; an anonymous emotional support mobile application. 
                             Through Sithivili,  we hope to provide you with a chance to open up to a person who is willing to listen 
