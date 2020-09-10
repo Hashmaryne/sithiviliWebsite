@@ -92,14 +92,15 @@
             text-align: center;
       }
 
-      .header-join {
+      .header-join 
+      {
             background-image: url(../images/join-us.png);
             background-repeat: no-repeat;
             background-size: contain;
             position: relative;
             height: 200px;
             width: auto;
-        }
+      }
 
       .heading-main-sec 
       {
@@ -115,30 +116,33 @@
             font-size: 31px;
       }
 
-      #poster {
+      #poster 
+      {
             margin-top: 20px;
             margin-bottom: 20px;
             height: 400px;
       }
 
-      .navigation{
+      .navigation
+      {
             text-align: center;;
       }
 
-      .logo-app {
+      .logo-app 
+      {
             position: absolute;
             left: 34%;
             height: 100px;
             top: 36%;
-        }
+      }
 
-      div#content-row {
+      div#content-row 
+      {
             position: relative;
       }
       
       i.fas.fa-check-circle 
       {
-      /* width: 217px; */
             position: relative;
             left: 38%;
             height: 150px;
@@ -148,7 +152,6 @@
 
       .fa-frown 
       {
-      /* width: 217px; */
             position: relative;
             left: 38%;
             height: 150px;
@@ -222,7 +225,6 @@
 
       .emergency-screen-img
       {
-      
             height: 235px;
             left: 2px;
             top: 182px;
@@ -381,17 +383,8 @@
             display:block;
      }
 
-     div#features-imgs {
-      margin-top: 160px;
-  }
+     div#features-imgs 
+     {
+            margin-top: 160px;
+     }
 } 
-
-/* Portrait and Landscape */
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 2) 
-  {
-      
-
-  }

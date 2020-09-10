@@ -235,7 +235,8 @@
                             tackling the stigma surrounding mental health and creating awareness around it. 
                             Your mental health should be your priority and it's never too late to reach out for help!</p>
 
-                            <p><i>*This app is a free service provided by Skepseis Private Limited, a software development startup.</i></p>
+                            <p><i>*This app is a free service provided by Skepseis Private Limited, a software development startup. For more information
+                                   please drop us an email at skepseis.pvtltd@gmail.com</i></p>
                     </div>
                 </div>
             </div>
@@ -372,8 +373,6 @@
                             </div>
                         </div>
                             @csrf
-
-                            <!--<div class="col-md-12"> <input type="submit" class="btn btn-info btn-send pt-2 btn-block"> </div>-->
                             <div class="row align-items-center">
                                 <div class="col-md-12" id="form-btn">
                                     <button type="submit" class="btn btn-info">

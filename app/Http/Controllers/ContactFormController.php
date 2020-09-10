@@ -18,14 +18,6 @@ class ContactFormController extends Controller
 
     public function store(Request $request)
     {
-        /* $this->valiadate($request, [
-            'name'=>'required',
-            'surname'=>'required',
-            'email'=>'required|email',
-            'mobile'=>'required',
-            'qualifications' =>'required',
-            'comments' => 'min:3'
-        ]); */
 
         $data = request()->validate([
             'name'=>'required',
