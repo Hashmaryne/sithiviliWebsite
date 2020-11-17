@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Project Sithivili is an Annoymous Emotional support application to improve the mental health of Sri Lankans">
+    <meta name="description" content="Sithivili an anonymous emotional support mobile application. 
+                            Through Sithivili,  we hope to provide you with a chance to open up to a person who is willing to listen 
+                            to your problems without any judgment, all the while being completely anonymous.">
     <meta name="keywords" content="mental health, sri lanka">
-    <meta name="author" content="John Doe">
+    <meta name="author" content="Skepseis Private Limited">
     <meta name="google-site-verification" content="THtT0TdZWs41qjPpD8QU8okbkE_JJLf5XuMRye8ebuM" />
 
     <!-- CSS stylesheet-->
@@ -93,7 +95,7 @@
                         </div>
                         
                         <div class="col-md-6" id="banner-left">
-                            <img src="{{URL::asset('/images/1.png')}}" class="homescreen-img" data-aos="fade-left">
+                            <img src="{{URL::asset('/images/1.png')}}" class="homescreen-img" data-aos="fade-up">
                         </div>
                     </div>
                 </div>
@@ -205,21 +207,36 @@
             <div class="row">
                 <div class="col-md-12"><h1 class="heading-sec">Who we are</h1></div>
 
-                <div class="row">
-                    <div class="col-md-12">
-                        <p>We at Skepseis Private Limited provide you with 
-                        <strong>"Sithivili"</strong> as a service to address social stigma 
-                        surrounding Mental Health of youth in Sri Lanka. Project Sithivili is an Annoymous Emotional support application to improve the mental health of Sri Lankans.
-                        We provide you with a chance to open upto a person who's willing to
-                        listen to your problems, issues and will guarantee your privacy.<p>
-                    </div>
-                </div>
             </div>
             <!--about us heading  ends--> 
             <div class="page_content">
                 <div class="row">
                     <div class="col-md-12" >
-                        <p></p>
+                            <h6 class="au-heading">How we started</h6>
+                            <p data-aos="fade-up">The idea for Sithivili came to us back in 2018, as a group of like-minded and passionate 
+                            undergraduates who saw a burning issue faced by our fellow Sri Lankan youth and wanted to help solve it.
+                            With this idea we took part in HackaDev 2018: a social innovation challenge where we were selected 
+                            as the best solution under the "Mental health of the Youth" category. 
+                            This project is therefore approved and supported by the WHO and UNDP.</p>
+                            
+                            <h6 class="au-heading">The Problem</h6> 
+                            <p data-aos="fade-up">The social stigma surrounding mental health has greatly affected our youth. This has caused
+                            youth to feel embarrassed to reach out for help when they are facing mental health problems.
+                            Often times, they are even unaware of the resources that are available in order to improve 
+                            their mental wellbeing, resulting in many youth not knowing how to deal with their mental health problems.</p>
+
+                            <h6 class="au-heading">Our Solution</h6> 
+                            
+                            <p data-aos="fade-up">Our solution for this problem is <strong>Sithivili</strong>; an anonymous emotional support mobile application. 
+                            Through Sithivili,  we hope to provide you with a chance to open up to a person who is willing to listen 
+                            to your problems without any judgment, all the while being completely anonymous.
+                            We also provide many important information about mental health services on the app.
+                            We hope that through this app we can help improve the mental health in Sri Lanka by 
+                            tackling the stigma surrounding mental health and creating awareness around it. 
+                            Your mental health should be your priority and it's never too late to reach out for help!</p>
+
+                            <p><i>*This app is a free service provided by Skepseis Private Limited, a software development startup. For more information
+                                   please drop us an email at skepseis.pvtltd@gmail.com</i></p>
                     </div>
                 </div>
             </div>
@@ -356,8 +373,6 @@
                             </div>
                         </div>
                             @csrf
-
-                            <!--<div class="col-md-12"> <input type="submit" class="btn btn-info btn-send pt-2 btn-block"> </div>-->
                             <div class="row align-items-center">
                                 <div class="col-md-12" id="form-btn">
                                     <button type="submit" class="btn btn-info">
@@ -417,7 +432,9 @@
                 <!--left sec ends-->
 
                 <!--left sec-->
+                
                 <div class="col-md-6" id="contact-right">
+                
                     <div class="card" id="form-card-contact">
                         <div class="form-header">Send Us a Message</div>
                         <form id="contact-form" role="form" action="{{ route('contact.store') }}" method="POST">

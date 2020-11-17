@@ -1,6 +1,8 @@
-body{
+body
+{
     padding: 0;
 }
+
 .header
 {
     background-image: url("../images/banner.jpeg");
@@ -54,7 +56,8 @@ body{
     width:auto;
 }
 
-.page-head{
+.page-head
+{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -105,7 +108,6 @@ body{
 
 .letstalk-btn
 {
-    
     margin-top:100px;
     text-align: center;
     position: absolute;
@@ -274,8 +276,6 @@ nav {
     right:0;
 
 }
-
-
 
 #poster
 {
@@ -761,7 +761,6 @@ p.contact-para
 
 p#contact-email 
 {
-    /* margin: -40px; */
     margin-top: -26px;
 }
 
@@ -802,4 +801,9 @@ p#contact-email
     color: rgb(0 89 255 / 64%);
     font-size: 22px;
     font-weight: bold;
+}
+
+h6 {
+    color: #007bff;
+    font-size: 18px;
 }
