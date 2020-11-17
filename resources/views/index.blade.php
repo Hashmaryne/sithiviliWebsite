@@ -8,10 +8,7 @@
     <meta name="keywords" content="mental health, sri lanka">
     <meta name="author" content="John Doe">
     <meta name="google-site-verification" content="THtT0TdZWs41qjPpD8QU8okbkE_JJLf5XuMRye8ebuM" />
-    @include('meta::manager', [
-    'title'         => 'Sithivili | Let's Talk',
-    'description'   => 'Project Sithivili is an Annoymous Emotional support application to improve the mental health of Sri Lankans',
-])
+
     <!-- CSS stylesheet-->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -88,13 +85,13 @@
                         <div class="col-md-6" id="banner-right">
                             <h3>Don't Lose<span> Hope</span>, <br><span>Believe</span> in yourself and all that you are.</h3>
                             <!-- <button class=""> -->
-                            <a href="https://play.google.com/store/apps/details?id=com.skepseis.sithivili" target="_blank"><img class="download-btn" src="{{URL::asset('/images/googleplay.png')}}"></img></a>
+                            <a href="https://play.google.com/store/apps/details?id=com.skepseis.sithivili" target="_blank" class="download-btn"><img src="{{URL::asset('/images/googleplay.png')}}"></a>
                                 <!-- Download Sithivili -->
                             <!-- </button> -->
-
+                            <a href="https://play.google.com/store/apps/details?id=com.skepseis.sithivili" target="_blank" class="download-btn-mobile" style="display:none"><img src="{{URL::asset('/images/googleplay.png')}}"></a>
                             
                         </div>
-
+                        
                         <div class="col-md-6" id="banner-left">
                             <img src="{{URL::asset('/images/1.png')}}" class="homescreen-img" data-aos="fade-left">
                         </div>

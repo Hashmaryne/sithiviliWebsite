@@ -209,12 +209,18 @@
             top: 36%!important;
       }
 
-      .download-btn
+      .download-btn-mobile
       {
-            top: 120%!important;;
+            display:block!important;
+            padding-top: 100px;
+   
       }
 
-      
+      .download-btn
+      {
+            display:none;
+      }
+
       .banner-section h3
       {
             font-size: 33px;
